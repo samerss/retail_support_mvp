@@ -1,25 +1,950 @@
-sku,name,price,currency,in_stock,category
-XPRS-1001,"Oppo A6 4G (4GB Ram, 128GB)",11499.00,EGP,7,smartphones
-XPRS-1002,Infinix Hot 60i (8GB RAM / 256GB),8666.00,EGP,15,smartphones
-XPRS-1003,Xiaomi Redmi Note 15 4G (6GB Ram 128GB),11499.00,EGP,9,smartphones
-XPRS-1004,"Oppo A6 4G (6GB Ram, 128GB)",13999.00,EGP,4,smartphones
-XPRS-1005,Vivo Y21d 4G (6GB Ram - 128GB),9690.00,EGP,12,smartphones
-XPRS-1006,Infinix Hot 60 5G (6GB Ram - 128GB),8444.00,EGP,0,smartphones
-XPRS-1007,Samsung Galaxy S26 Ultra 5G (12GB Ram / 512GB),80499.00,EGP,3,smartphones
-XPRS-1008,Honor X5c Plus 4G (4GB Ram - 128GB),6888.00,EGP,20,smartphones
-XPRS-2001,"Microsoft Surface Laptop 4 15"" (AMD Ryzen 7)",29999.00,EGP,5,laptops
-XPRS-2002,"Asus ROG Strix G16 (AMD Ryzen 9 9955HX, RTX 5060)",87777.00,EGP,6,laptops
-XPRS-2003,Asus Vivobook 15 (Intel Core i5-1335U),32499.00,EGP,10,laptops
-XPRS-2004,"Asus ROG Strix SCAR 18 (RTX 5070 Ti, Ultra 9 275HX)",158888.00,EGP,2,laptops
-XPRS-2005,"ASUS TUF A14 (Ryzen AI 9 HX 370, RTX 4050)",64749.00,EGP,4,laptops
-XPRS-2006,ASUS Zenbook DUO (Ultra 7 155H),98399.00,EGP,0,laptops
-XPRS-2007,MSI Prestige 13 AI Evo (Intel Core Ultra 7 155H),45999.00,EGP,7,laptops
-XPRS-2008,MSI Summit 13 AI Evo X360 (Intel Core Ultra9 288V),89099.00,EGP,3,laptops
-XPRS-3001,Lenovo Tab P11 2nd Generation Tablet,25420.00,EGP,8,tablets
-XPRS-3002,Lenovo Tab Plus Wi-Fi (8GB Ram / 256GB),18763.00,EGP,11,tablets
-XPRS-3003,Lenovo Tab K11 LTE (8GB Ram / 128GB),17499.00,EGP,6,tablets
-XPRS-3004,Xiaomi Pad SE 8.7 - Wi-Fi Only,8299.00,EGP,14,tablets
-XPRS-3005,"Xiaomi Redmi Pad SE 11 8GB RAM, 256GB",11666.00,EGP,9,tablets
-XPRS-3006,"Lenovo Tab P12 (12.7"")",16999.00,EGP,5,tablets
-XPRS-3007,Lenovo Tab One 4G (4GB RAM / 128GB),6160.00,EGP,0,tablets
-XPRS-3008,Honor Pad X9a LTE (8GB Ram / 128GB),13155.00,EGP,10,tablets
+sku,name,brand,price,currency,in_stock,category,colors
+XPRS-00001,CardoO VR Max - Black,CardoO,1999.00,EGP,10,3D Glasses,Yellow|Black
+XPRS-00002,hoco Cable 3.5mm to 3.5mm UPA24 Smooth audio AUX,Hoco,118.00,EGP,10,AUX Cables,Gold|Black|Red
+XPRS-00003,Recci RDS-A26 Lightning to 3.5mm AUX Audio Cable,Recci,230.00,EGP,10,AUX Cables,Black|Gray
+XPRS-00004,Recci RDS-A27 Type-C to 3.5mm AUX Audio Cable,Recci,230.00,EGP,10,AUX Cables,Black|Gray
+XPRS-00005,WHOOP MG Life Health and Fitness Tracker (1 Year membership),WHOOP,26974.00,EGP,10,Activity Monitors,Silver|Black|Gold|Green|White|Gray
+XPRS-00006,Hisense 1.5HP Inverter Cool & Heat AC – AC-12K-In,Hisense,29499.00,EGP,10,Air Conditioners,
+XPRS-00007,Tornado 1.5HP Air Conditioner Cooling & Heating Inverter (TY-VX12BEE),Tornado,34799.00,EGP,10,Air Conditioners,White
+XPRS-00008,Tornado Split Air Conditioner 2.25 HP Cool Only | Digital Super Jet White TH-C18BEE,Tornado,37299.00,EGP,10,Air Conditioners,White
+XPRS-00009,Tornado Split Air Conditioner 2.25 HP Cool & Heat | Digital Super Jet White TY-C18BEE,Tornado,39699.00,EGP,10,Air Conditioners,White
+XPRS-00010,Hisense 2.25HP Inverter Cool & Heat AC  – AC-18K-In,Hisense,42999.00,EGP,10,Air Conditioners,White
+XPRS-00011,Tornado Split Air Conditioner 3 HP Cool Only | Digital Super Jet White TH-C24BEE,Tornado,44199.00,EGP,10,Air Conditioners,White
+XPRS-00012,Hisense 3HP Inverter Cool & Heat AC  – AC-24K-In,Hisense,47999.00,EGP,10,Air Conditioners,White
+XPRS-00013,Carrier Optimax Pro 3HP Split Air Conditioner Cool & Heat (53QHCT24N-708F),Carrier,50399.00,EGP,10,Air Conditioners,White
+XPRS-00014,"Philips Digital Air Fryer, 3.2 Liters, 1300Watt With Rapid Air Technology, Analogue, Black - NA110/00",Philips,3399.00,EGP,10,Air Fryers,
+XPRS-00015,"Xiaomi Mi Smart Air Fryer 3.5L, 1500W OLED Touch Screen - White",Xiaomi,5699.00,EGP,10,Air Fryers,
+XPRS-00016,Bosch Series 6 Airfryer 1800W 7.2 L Digital Touch - Black - MAF671B0,Bosch,7399.00,EGP,10,Air Fryers,
+XPRS-00017,"Xiaomi Air Fryer 6L, XXL Hot Air Fryer 1500W, 360° Hot Air Circulation - Black",Xiaomi,7999.00,EGP,10,Air Fryers,
+XPRS-00018,Xiaomi Dual Zone Air Fryer 10L - Black - XI606HA27P27PNAFAMZ,Xiaomi,11799.00,EGP,10,Air Fryers,
+XPRS-00019,Sharp Air Fryer Dual Cook 1800 Watt 8 Liter Electronic Touch Screen Glass Panel Stainless - KF-DF80RT-EK2,Sharp,12099.00,EGP,10,Air Fryers,
+XPRS-00020,Xiaomi Smart Air Purifier 4 Lite-White,Xiaomi,9999.00,EGP,10,Air Purifiers,White
+XPRS-00021,Momax Q.Clock 5 (QC5) Digital Clock With Wireless Charger - White,momax,6799.00,EGP,10,Alarm Clocks,
+XPRS-00022,Choetech Lightning to 3.5mm Audio Adapter - White,Choetech,263.00,EGP,10,Audio & Video Cable Adapters & Couplers,White
+XPRS-00023,Ugreen 3.5mm Male to 3.5mm male Cable Braid 2M - Black,Ugreen,277.00,EGP,10,Audio & Video Cables,Black
+XPRS-00024,RODE Streamer X Audio Interface and Video Capture Card,RODE,18000.00,EGP,10,Audio Mixers,Multicolor|Black
+XPRS-00025,RODE Caster Duo Integrated Audio Production Studio,RODE,36000.00,EGP,10,Audio Mixers,Black|Multicolor
+XPRS-00026,RODE Caster Pro II Integrated Audio Production Studio,RODE,45000.00,EGP,10,Audio Mixers,
+XPRS-00027,RODE Caster Video Video and Audio Production Console,RODE,70000.00,EGP,10,Audio Mixers,
+XPRS-00028,"L’avvento BG816 Laptop Backpack – 15.6"" | Sleek & Comfortable for Everyday Carry",L'avvento,1113.00,EGP,10,Backpacks,
+XPRS-00029,L’avvento Laptop Bag BG796 up to 15.6 laptop- Black | Sleek & Practical for Everyday Use,L'avvento,1288.00,EGP,10,Backpacks,
+XPRS-00030,"L'avvento Laptop Backpack BG915 15.6"" - Black",L'avvento,1521.00,EGP,10,Backpacks,
+XPRS-00031,"L’avvento Laptop Backpack BG916 up to 15.6"" - Black | Affordable Protection for Daily Life",L'avvento,1759.00,EGP,10,Backpacks,
+XPRS-00032,CardoO Scale,CardoO,1999.00,EGP,10,Body Weight Scales,Black|White
+XPRS-00033,CardoO Scale Pro - Gold,CardoO,3499.00,EGP,10,Body Weight Scales,Gold|Geometric
+XPRS-00034,Tornado Vacuum Cleaner 1800 Watt Anti-bacteria Filter Grey x Black - TVC-180SG,Tornado,4399.00,EGP,10,Canister Vacs,Black|Gray
+XPRS-00035,"Midea Vacuum Cleaner 16A, Silence system, Large dust capacity, Dust full indicator, Variable power control, Outlet HEPA filter, 3 Liters, Black and Red",Midea,6199.00,EGP,10,Canister Vacs,Black
+XPRS-00036,Bosch Pro Power Bagless Vacuum 2000 Watt Cleaner Black BGS21WPOW,Bosch,8399.00,EGP,10,Canister Vacs,Black
+XPRS-00037,"Bosch Series 4 Bagged vacuum cleaner ProAnimal, bagless 4LBGBS4PET1 - Red",Bosch,8699.00,EGP,10,Canister Vacs,Red
+XPRS-00038,hoco Car charger Z36 Leader dual port set with cable Micro-usb - Black,Hoco,233.00,EGP,10,Car Chargers,
+XPRS-00039,l'avvento Car Charger MP319 QC3 Dual USB 18W - White,L'avvento,233.00,EGP,10,Car Chargers,
+XPRS-00040,Choetech QC3.0 Dual Port 36W Car Charger - Black,Choetech,249.00,EGP,10,Car Chargers,Black
+XPRS-00041,hoco Car charger Z36 Leader dual port set with cable Type-c,Hoco,294.00,EGP,10,Car Chargers,White|Black
+XPRS-00042,hoco Car charger Z36 Leader dual port set with cable Lightning,Hoco,294.00,EGP,10,Car Chargers,White|Black
+XPRS-00043,L'avvento (MP328) Ultra-Fast QC3 PD Car Charger with Type-C - 38W - Black,L'avvento,409.00,EGP,10,Car Chargers,
+XPRS-00044,Choetech PD 20W Dual-Port Car Charger - Black,Choetech,431.00,EGP,10,Car Chargers,Black
+XPRS-00045,hoco Car charger Z57 Glorious 30W cable set C to C 1m,Hoco,527.00,EGP,10,Car Chargers,
+XPRS-00046,RAVPower 2-port Car Charger 20W PD - Black,RAVPower,527.00,EGP,10,Car Chargers,Black
+XPRS-00047,Anker Car Charger Ultra Compact Dual Port 30W | A2741H11 - Black,Anker,549.00,EGP,10,Car Chargers,Black
+XPRS-00048,Choetech PD 40W Fast Car Charger Compact - Black,Choetech,584.00,EGP,10,Car Chargers,Black
+XPRS-00049,hoco Car charger NZ5 Smooth road PD30W+QC3.0,Hoco,585.00,EGP,10,Car Chargers,
+XPRS-00050,Ugreen 30W 2-Port Fast Car Charger - Black,Ugreen,633.00,EGP,10,Car Chargers,Black
+XPRS-00051,Cellularline 40W Car Multipower Duo Charger - Black,Cellularline,638.00,EGP,10,Car Chargers,Black
+XPRS-00052,Choetech PD40W fast Car Charger - Black,Choetech,747.00,EGP,10,Car Chargers,Black
+XPRS-00053,Choetech PD+QC30W Fast Car Charger - Black,Choetech,791.00,EGP,10,Car Chargers,Black
+XPRS-00054,Ugreen A+C Dual-Port Car Charger PD30W+SCP22.5W - Black,Ugreen,844.00,EGP,10,Car Chargers,Black
+XPRS-00055,Choetech 60W Dual-Port Fast Car Charger - Black,Choetech,866.00,EGP,10,Car Chargers,Black
+XPRS-00056,hoco Car charger NZ5 Smooth road PD30W+QC3.0 set with cable Type-c 1m,Hoco,936.00,EGP,10,Car Chargers,
+XPRS-00057,Tornado Ceiling Fan 56 Inch 3 Blades - White - TCF56WW,Tornado,1699.00,EGP,10,Ceiling Fans,
+XPRS-00058,Tornado Ceiling Fan 56 Inch With 3 Metal Blades And 5 Speeds - White - TCF56H,Tornado,2299.00,EGP,10,Ceiling Fans,White
+XPRS-00059,Tornado Ceiling Fan 56 Inch LED 3 Blades - White - TCF56L,Tornado,2399.00,EGP,10,Ceiling Fans,
+XPRS-00060,Recharged By Infinity FlexiCharge Eco Charging Station - 7KW,Infinity,21999.00,EGP,10,Charging Stations,White
+XPRS-00061,Recharged By Infinity FlexiCharge Eco Charging Station - 22KW,Infinity,23940.00,EGP,10,Charging Stations,White
+XPRS-00062,Recharged By Infinity FlexiCharge Prime Charging Station - 7KW,Infinity,29415.00,EGP,10,Charging Stations,Gray|Black
+XPRS-00063,Recharged By Infinity FlexiCharge Prime Charging Station - 22KW,Infinity,31350.00,EGP,10,Charging Stations,Gray|Black|White
+XPRS-00064,"Kenwood Turkish Coffee Maker, 500ml Capacity, 535W - Black/Red - CTP10.000BR",Kenwood,3199.00,EGP,10,Coffee Makers & Espresso Machines,Red
+XPRS-00065,Arzum Okka Minio Pro Turkish Coffee Machine – Brown (OK0010),Arzum,3599.00,EGP,10,Coffee Makers & Espresso Machines,Brown
+XPRS-00066,"Tornado Turkish Coffee Maker, 330ml – (TCME-100)",Tornado,3599.00,EGP,10,Coffee Makers & Espresso Machines,Red|Brown|Violet|Rose Gold
+XPRS-00067,ZEWWW ELECTRIC SCOOTER ES500,Zewww,29999.00,EGP,10,Commuter E-Scooters,
+XPRS-00068,hoco Keyboard + mouse set GM11 Terrific glowing RGB,Hoco,690.00,EGP,10,Computer Accessory Sets,Black|Multicolor|Gray
+XPRS-00069,hoco Keyboard + mouse set GM12 Light and shadow RGB,Hoco,1816.00,EGP,10,Computer Accessory Sets,Black|Multicolor
+XPRS-00070,V2Com P4 15.6″ Portable Screen,V2Com,7499.00,EGP,10,Computer Monitor Accessories,Black
+XPRS-00071,V2Com S2 14″ FHD 1080P Triple Portable Screen Extender,V2Com,16999.00,EGP,10,Computer Monitor Accessories,Black
+XPRS-00072,V2Com S6 15.6″ Triple Portable Screen Extender,V2Com,23999.00,EGP,10,Computer Monitor Accessories,Black|Gold|Beige
+XPRS-00073,"V2Com W3 15.6"" Quad Screen Extender",V2Com,28000.00,EGP,10,Computer Monitor Accessories,
+XPRS-00074,Monitor MSI PRO MP251 E2 25 Inch IPS FHD 120Hz,MSI,6450.00,EGP,10,Computer Monitors,
+XPRS-00075,Lenovo L24i-4A (D24238FL0) 23.8-inch IPS FHD 100Hz Monitor,Lenovo,7151.00,EGP,10,Computer Monitors,Black|White|Gray
+XPRS-00076,Lenovo Legion R24e 23.8-inch IPS FHD 180Hz Gaming Monitor,Lenovo,7899.00,EGP,10,Computer Monitors,Black
+XPRS-00077,"Msi MAG 244F 24-inch Gaming Monitor, Flat Rapid IPS 200Hz Display",MSI,9382.00,EGP,10,Computer Monitors,Black
+XPRS-00078,MSI MAG 256F,MSI,12314.00,EGP,10,Computer Monitors,Black
+XPRS-00079,MSI MAG 276CXF,MSI,12666.00,EGP,10,Computer Monitors,Black
+XPRS-00080,Lenovo Legion R27fc-30 27 inch FHD Curved Gaming Monitor,Lenovo,14074.00,EGP,10,Computer Monitors,
+XPRS-00081,MAG 32C6X,MSI,15129.00,EGP,10,Computer Monitors,Black
+XPRS-00082,MSI MAG 274QF X24,MSI,17358.00,EGP,10,Computer Monitors,Black
+XPRS-00083,MSI G321Q,MSI,19938.00,EGP,10,Computer Monitors,Black
+XPRS-00084,MAG 274QPF X30MV,MSI,25567.00,EGP,10,Computer Monitors,Black
+XPRS-00085,MPG 274URDFW E16M,MSI,36709.00,EGP,10,Computer Monitors,Black
+XPRS-00086,MAG 273QP QD-OLED X24,MSI,42081.00,EGP,10,Computer Monitors,
+XPRS-00087,MAG 272QP QD-OLED X50,MSI,59345.00,EGP,10,Computer Monitors,Black
+XPRS-00088,MPG 321URX QD-OLED,MSI,62782.00,EGP,10,Computer Monitors,Black
+XPRS-00089,Recci Computer Stand Rho-M21,Recci,685.00,EGP,10,Computer Risers & Stands,Silver
+XPRS-00090,Recci Computer Stand 180 Bracket Rm05,Recci,1170.00,EGP,10,Computer Risers & Stands,Black|Silver
+XPRS-00091,Purity Built-in Electric 30 CM Hob 2 Eyes HPT302SE,Purity,6199.00,EGP,10,Cooktops,Silver
+XPRS-00092,Purity Built-in Electric Hob Ceramic 30 CM 2 Eyes HPREE V3050,Purity,7699.00,EGP,10,Cooktops,Black|White
+XPRS-00093,Purity Built-in Gas Hob 4 Eyes Enameled Pan Stand HPT604S,Purity,8199.00,EGP,10,Cooktops,Silver|Black
+XPRS-00094,Purity Built-in Gas Hob 4 Eyes 60 CM Heavy Duty Grids HPT602S,Purity,10999.00,EGP,10,Cooktops,Black
+XPRS-00095,Purity Built-in Gas Hob 4 Eyes 60 Cm Heavy Duty Grids HPT603S,Purity,11299.00,EGP,10,Cooktops,Silver
+XPRS-00096,Purity Built-in Gas Hob 4 Eyes 60 Cm Heavy Duty Grids HPT602G,Purity,13299.00,EGP,10,Cooktops,Black
+XPRS-00097,Purity Built-in Gas Hob 60cm 4 Burners Heavy Duty Holders HPT617G,Purity,13999.00,EGP,10,Cooktops,Black
+XPRS-00098,Purity Built-in Gas Hob 60 cm 4 Burners Heavy Duty Holders HPT652G,Purity,14399.00,EGP,10,Cooktops,Black
+XPRS-00099,Purity Built-in Gas Hob 60 cm 4 Burners Heavy Duty Holders HPT603G,Purity,14799.00,EGP,10,Cooktops,Black
+XPRS-00100,Purity Built In Gas Hob 4 Eyes Heavy Duty Grids HPT606G,Purity,14999.00,EGP,10,Cooktops,Black
+XPRS-00101,Purity Built-in Gas Hob 60 cm 4 Burners Heavy Duty Holders HPT622-GX,Purity,15999.00,EGP,10,Cooktops,Black
+XPRS-00102,Purity Built-in Gas Hob 90 cm 5 Burners Heavy Duty Holders HPT975S,Purity,16399.00,EGP,10,Cooktops,Silver
+XPRS-00103,Purity Built-in Gas Hob 90 cm 5 Burners Heavy Duty Holders HPT906S,Purity,16399.00,EGP,10,Cooktops,Silver
+XPRS-00104,Purity Built-in Gas Hob 70 cm 5 Burners Heavy Duty Holders HPT713S,Purity,16399.00,EGP,10,Cooktops,
+XPRS-00105,Bosch Built-In Gas Hob 60cm Series 4 Stainless Steel - PGP6B5K60Q,Bosch,16799.00,EGP,10,Cooktops,Silver
+XPRS-00106,Purity Built-in Gas Hob 70 cm 5 Burners Heavy Duty Holders HPT713G,Purity,16999.00,EGP,10,Cooktops,Black
+XPRS-00107,Purity Built In Gas Hob 5 Eyes Heavy Duty Grids 90 CM Glass Black HPT975G,Purity,17399.00,EGP,10,Cooktops,Black
+XPRS-00108,Purity Built In Gas Hob 5 Eyes Heavy Duty Grids 90 CM Glass Black HPT939G,Purity,17899.00,EGP,10,Cooktops,Black
+XPRS-00109,Purity Built In Gas Hob 5 Eyes Heavy Duty Grids 90 CM Glass Black HPT906G,Purity,17899.00,EGP,10,Cooktops,Black
+XPRS-00110,Purity Built-in Gas Hob 90 cm 6 Burners Heavy Duty Holders HPT903S,Purity,17899.00,EGP,10,Cooktops,Silver|Black
+XPRS-00111,Purity Built In Gas Hob 5 Eyes Heavy Duty Grids 90 CM Glass Black HPT911G,Purity,18199.00,EGP,10,Cooktops,Black
+XPRS-00112,Purity Built-in Gas Hob 90 cm 5 Burners Heavy Duty Holders HPT911S,Purity,18199.00,EGP,10,Cooktops,Black
+XPRS-00113,Purity Built-in Gas Hob 90 CM 6 Burners Heavy Duty Holders HPT903G,Purity,18399.00,EGP,10,Cooktops,Black
+XPRS-00114,Purity Built In Gas Hob 5 Eyes Heavy Duty Grids 90 CM Glass Black HPT913G,Purity,18399.00,EGP,10,Cooktops,Black
+XPRS-00115,Purity Built In Gas Hob 5 Eyes Heavy Duty Grids 90 CM Glass Black HPT912G,Purity,18399.00,EGP,10,Cooktops,Black
+XPRS-00116,Purity Built In Gas Hob 4 Gas Burner + 1 Electric Burner Heavy Duty Grids HPT909ES,Purity,18399.00,EGP,10,Cooktops,Black
+XPRS-00117,Bosch Gas Hob 4 Burner 60 cm Black - PCP6A6B90,Bosch,18899.00,EGP,10,Cooktops,Black
+XPRS-00118,Purity Built In Gas Hob 5 Eyes Heavy Duty Grids 90 CM Glass Black HPT911 MAT-BL,Purity,18999.00,EGP,10,Cooktops,Black
+XPRS-00119,Purity Built-in Gas Hob 90 CM 6 Burners Heavy Duty Holders HPT904G,Purity,20499.00,EGP,10,Cooktops,Black
+XPRS-00120,Purity Built-in Gas Hob 90 CM 6 Burners Heavy Duty Holders HPT916G,Purity,20599.00,EGP,10,Cooktops,Black
+XPRS-00121,Bosch Built-In Gas Hob 5 Burner 75 cm Stainless Steel - PCQ7A5B90,Bosch,22499.00,EGP,10,Cooktops,Silver
+XPRS-00122,Bosch Gas Hob 5 Burners 75 cm Hard Glass Black - PPQ7A6B20,Bosch,23599.00,EGP,10,Cooktops,Black
+XPRS-00123,Bosch Series 6 Cooker 90 * 60 cm 5 Burners Cast Iron Digital Screen Full Safety - HJY5G7V61S,Bosch,36599.00,EGP,10,Cooktops,Black|Silver
+XPRS-00124,Purity Built-In Induction Electric Hob with Hood – FTS472G3QWP (90 cm),Purity,65599.00,EGP,10,Cooktops,Black
+XPRS-00125,"Xiaomi Smart Tower Fan 2, 24W - White",Xiaomi,9799.00,EGP,10,Desk & Pedestal Fans,White
+XPRS-00126,HP OmniStudio X All-in-One Desktop - Intel Core Ultra 5 125H - Intel Arc Graphics - 16GB Ram - 256GB - Windows 11 Home,HP,95130.00,EGP,10,Desktop Computers,Silver
+XPRS-00127,HP OmniStudio X All-in-One Desktop - RTX 4050 - Intel Core Ultra 5 125H - 16GB Ram - 512GB - Windows 11 Home,HP,110767.00,EGP,10,Desktop Computers,Silver
+XPRS-00128,Hp OmniStudio X AI All-in-One Desktop Ultra 7 155H - 16GB - 512GB - RTX 4050 - 31.5-inch 4K Display,HP,121974.00,EGP,10,Desktop Computers,Silver
+XPRS-00129,Redmi Buds6 Active - Pink,Redmi,1136.00,EGP,10,Earbuds,
+XPRS-00130,HUAWEI FreeBuds SE 2 - Blue,HUAWEI,1747.00,EGP,10,Earbuds,
+XPRS-00131,"Philips Series 5000 Turkish Coffee Maker, 735 Watt, Black Copper - HDA150/60",Philips,3499.00,EGP,10,Electric & Stovetop Espresso Pots,Black
+XPRS-00132,"Mienta Electric Kettle, 1.7 Liter, 2200 Watt, EK201937A - Black",mienta,999.00,EGP,10,Electric Kettles,Black
+XPRS-00133,"Xiaomi Electric Glass Kettle 1.7L, 2200W Power LED Light Display - Silver",Xiaomi,2399.00,EGP,10,Electric Kettles,Silver
+XPRS-00134,"Xiaomi Smart Kettle 2 Pro 1800 Watt, 1.7L - White",Xiaomi,3999.00,EGP,10,Electric Kettles,White
+XPRS-00135,"De'Longhi Dedica Duo EC890.M, Barista Coffee Machine with Pump, Espresso and Cold Brew, Manual Coffee Machine with LatteArt Steam Rod, 15 cm Wide, 2 Espresso, Touch Screen, Cup up to 13 cm, Metal",De'Longhi,13999.00,EGP,10,Espresso Machines,Silver
+XPRS-00136,"De’Longhi Magnifica Start, Bean-to-Cup Coffee Machine, 1450W – ECAM220.22.GB",De'Longhi,31399.00,EGP,10,Espresso Machines,Black
+XPRS-00137,"Bosch Espresso machine Series 2, Fully Automatic, 1.4 liters Tank, black - TIE20119",Bosch,37699.00,EGP,10,Espresso Machines,Black
+XPRS-00138,"De’Longhi Magnifica Evo, Bean-to-Cup Coffee Machine, 1450W – (ECAM290.21.B)",De'Longhi,37799.00,EGP,10,Espresso Machines,Black
+XPRS-00139,Bosch Espresso Machine 400 Watt Full  Digital  Automatic  Black -TIS65429RW,Bosch,47099.00,EGP,10,Espresso Machines,Black
+XPRS-00140,"Bosch Hand Blender, 450 Watt, White - MSM64110",Bosch,2099.00,EGP,10,Food Blenders,White
+XPRS-00141,"Braun MultiQuick 2 Hand Blender, 600 Watt, White\Blue - MQ20001M",Braun,2499.00,EGP,10,Food Blenders,White
+XPRS-00142,"Bosch Hand Blender ErgoMaster Series 4, 800 watt – MSM4W420",Bosch,2999.00,EGP,10,Food Blenders,Black
+XPRS-00143,"Bosch  Hand Blender, 600 Watt, 600 ml Capacity, 12 Speeds - White Silver - MSM66120",Bosch,3199.00,EGP,10,Food Blenders,
+XPRS-00144,"Braun MultiQuick 3 Hand Blender, White\Blue – MQ3025",Braun,3799.00,EGP,10,Food Blenders,White|Clear
+XPRS-00145,"Tornado Hand Blender Set, 1000-Watt, Food Processor, Whisk, Black - THB-1000MK",Tornado,4099.00,EGP,10,Food Blenders,Black
+XPRS-00146,"Braun MultiQuick 5 Vario Hand Blender, 1000 Watt, White/Grey – MQ5245",Braun,4999.00,EGP,10,Food Blenders,White
+XPRS-00147,"Xiaomi Smart Blender 1000W, 1600mL, White",Xiaomi,6499.00,EGP,10,Food Blenders,White
+XPRS-00148,"Bosch Series 6 ErgoMaster Multifunction Hand Blender, 600ml, 1000 W, Black Silver - MSM6M623",Bosch,6799.00,EGP,10,Food Blenders,Black
+XPRS-00149,"Bosch Food Processor 900 Watt, Black and Silver - MCM3PM386",Bosch,8899.00,EGP,10,Food Blenders,Black
+XPRS-00150,"Bosch Multitalent 8 Food Processor, 1250 Watt, Black Stainless Steel - MC812M844",Bosch,9899.00,EGP,10,Food Blenders,Black
+XPRS-00151,"Bosch CompactPower Meat Mincer, 1600 Watt, White \ Red - MFW3630I",Bosch,6999.00,EGP,10,Food Grinders,White
+XPRS-00152,"Bosch Series 4 VitaPower MMB6172B Stand Mixer (1,200 watts, 1.5 litre)",Bosch,6699.00,EGP,10,Food Mixers,Black
+XPRS-00153,"Bosch Mum Serie 2 Kitchen Machine - 900 Watt, Black and Stainless Steel - MUMS2VM00",Bosch,9499.00,EGP,10,Food Mixers,Black
+XPRS-00154,"Bosch MUM 5 Kitchen Machine, 900 Watt, White and Silver - MUM54251",Bosch,13099.00,EGP,10,Food Mixers,White
+XPRS-00155,"Sonai Vegetables Chopper Stainless Steel Blades 120W, 350ml - White - SH-570",Sonai,899.00,EGP,10,Food Processors,White
+XPRS-00156,Tornado Chopper 400-Watt 1.5 Liter Mince Meat White - CH-400BL,Tornado,1599.00,EGP,10,Food Processors,
+XPRS-00157,"Bosch Food processor MultiTalent 3 800 W Black, Brushed stainless steel - MCM3421M",Bosch,4199.00,EGP,10,Food Processors,
+XPRS-00158,"Tornado Food Processor, 1000-Watt, 1.2 Liter Bowl, White - TFP-1000CC",Tornado,4499.00,EGP,10,Food Processors,White
+XPRS-00159,WiWU Mini Car Bracket - Black,wiwu,233.00,EGP,10,GPS Mounts,
+XPRS-00160,Apple AirTag (4 Pack),Apple,7777.00,EGP,10,GPS Tracking Devices,
+XPRS-00161,Logitech G29 Driving Force Steering Wheels,Logitech,13999.00,EGP,10,Game Racing Wheels,
+XPRS-00162,MSI Thin 15 B13UCX - intel core i5-13420H - RTX 2050 (8GB Ram / 512GB SSD) 15.6-inch 144Hz Display,MSI,33147.00,EGP,10,Gaming Computers,Gray
+XPRS-00163,MSI Cyborg 15 A13VF - Raptor Lake i7-13620H - RTX 4060 - (16GB / 512GB SSD) 15.6 inch- FHD 144Hz Display,MSI,54470.00,EGP,10,Gaming Computers,Black
+XPRS-00164,ASUS TUF A14 Ryzen 7 8845HS (FA401UU-RG028W) RTX 4050 - 16GB RAM - 512GB SSD - 14 inches- Windows 11 Home,ASUS,57999.00,EGP,10,Gaming Computers,Black
+XPRS-00165,MSI sword 16HX B14VFKG - Intel Core i7‑14650HX - RTX4060 - 16GB Ram - 512GB SSD - Dos,MSI,58888.00,EGP,10,Gaming Computers,Black
+XPRS-00166,ASUS TUF A14 -Ryzen AI 9 HX 370 RTX 4050  (FA401WU-RG037W) 16GB RAM / 1TB SSD) 14-inch 165Hz Display – Windows 11,ASUS,65800.00,EGP,10,Gaming Computers,Black
+XPRS-00167,ASUS TUF A16 (FA608UH-RV007W) AMD Ryzen 7 260 - RTX 5050 (16GB RAM / 512GB SSD) 16 Inch FHD 165Hz Display - Windows 11 Home,ASUS,67520.00,EGP,10,Gaming Computers,Black
+XPRS-00168,MSI Sword 16 HX B14VFKG - intel core i9 14900HX - RTX 4060 - 16GB Ram - 1TB - 144Hz Display,MSI,69999.00,EGP,10,Gaming Computers,Gray
+XPRS-00169,MSI Crosshair 16 HX AI D2XWFKG Intel Ultra 7 255HX –16GB RAM– RTX 5060 GDDR7 8GB– 1TB SSD – 16″ QHD+ 240Hz – Gaming Laptop (9S7-15P421-208 ),MSI,77900.00,EGP,10,Gaming Computers,Black
+XPRS-00170,Asus ROG Strix G16 (G614FM-RV169W) AMD Ryzen 9 9955HX - RTX 5060 (16GB Ram / 1TB) 16 Inch FHD+ 165Hz Display - Windows 11 Home,ASUS,96700.00,EGP,10,Gaming Computers,Gray
+XPRS-00171,MSI Vector 16 HX AI A2XWHG Core Ultra 7 RTX 5070 TI 12GB GDDR7 16GB RAM 1TB SSD 16″ QHD+240Hz WIN 11( 9S7-15M352-489),MSI,99999.00,EGP,10,Gaming Computers,Gray|Black
+XPRS-00172,MSI Vector 16 HX AI A2XWHG - Intel Core Ultra 9-275HX - RTX 5070 Ti (1TB SSD / 32GB RAM) 16-inch QHD 240Hz Display,MSI,129999.00,EGP,10,Gaming Computers,Gray
+XPRS-00173,Asus ROG Strix SCAR 18 (G835LR-AI3201W) RTX 5070 Ti - Ultra 9 275HX (32GB Ram / 1TB SSD) 18 Inch 2.5K Display - Windows 11,ASUS,168777.00,EGP,10,Gaming Computers,Gray
+XPRS-00174,Asus ROG Strix G16 (G615LW-RV132W) Intel Ultra 9 275HX - RTX 5080 (32GB RAM / 1TB SSD) 16-inch FHD+ 165Hz Display - Win 11 Home,ASUS,169999.00,EGP,10,Gaming Computers,Gray
+XPRS-00175,"ASUS TUF Gaming F16 (FX607VJB-RL805W) Intel Core 5 210H, 8GB RAM, 512GB SSD, RTX 3050-6G, 16"" 144Hz Display, Win11 H",ASUS,44700.00,EGP,10,Gaming Laptops,Black|Gray
+XPRS-00176,"ASUS TUF Gaming A15 (FA506NCQ-HN167W) Amd Ryzen 7-170H, 16GB RAM, 512GB SSD, RTX 3050-4G, 15.6"" FHD 144Hz Display, Win11 H",ASUS,46299.00,EGP,10,Gaming Laptops,Black|Geometric
+XPRS-00177,MSI Cyborg 15 A2RUDX - Intel Core 7 240H - 512GB SSD - 16GB Ram DDR5 - RTX 3050 - 15.6 Inch FHD 144Hz Display - Win11 Home,MSI,48888.00,EGP,10,Gaming Laptops,
+XPRS-00178,"MSI Katana 15 HX B14WEK-832 - Intel Core i7 14650HX - RTX 5050 - 16G Ram DDR5 - 512GB SSD Gen4 - 15.6"" QHD IPS 165Hz Display- windows 11",MSI,57777.00,EGP,10,Gaming Laptops,
+XPRS-00179,MSI Katana 15 HX B14WFK-245EG - Intel Core i7 -14650HX - RTX 5060 8GB - 16GB Ram DDR5 - 1TB SSD - 15.6 inch QHD IPS 165Hz Display,MSI,66950.00,EGP,10,Gaming Laptops,
+XPRS-00180,"ASUS TUF Gaming F16 (FX608JHR-RV057W) Intel Core i7-14650HX, 16GB RAM, 512GB SSD, RTX 5050-8GB, 16"" 165Hz Display, Win11 H",ASUS,73550.00,EGP,10,Gaming Laptops,Black
+XPRS-00181,"ASUS TUF Gaming F16 (FX608JMR-RV057W) Intel Core i7-14650HX, 16GB RAM, 512GB SSD, RTX 5060-8GB, 16"" 165Hz Display, Win11 H",ASUS,77999.00,EGP,10,Gaming Laptops,Black
+XPRS-00182,"Asus ROG Strix G16 (G614PH-RV161W) Amd Ryzen9-8940HX, 16GB RAM, 1TB SSD, RTX 5050-8GB, 16"" 165Hz Display, Win11 H",ASUS,88199.00,EGP,10,Gaming Laptops,Black
+XPRS-00183,"Asus ROG Strix G16 (G615LM-RV009W) Intel Ultra 9-275HX, 16GB RAM, 1TB SSD, RTX 5060-8GB, 16"" FHD+ 165Hz Display, Win11 H",ASUS,113490.00,EGP,10,Gaming Laptops,
+XPRS-00184,Maxco MPB-P11 Battery Pack 10000 mAh Magnetic Wireless Charging - White,Maxco,2344.00,EGP,10,General Purpose Battery Chargers,
+XPRS-00185,Bosch Electric Grill 2000W 3 in 1 Toaster Sandwich Maker Grill Black - TCG3323,Bosch,5199.00,EGP,10,Grills,
+XPRS-00186,Choetech HDMI to HDMI Cable 4K - 2M - Black XHH02-BK,Choetech,211.00,EGP,10,HDMI Cables,Black
+XPRS-00187,Choetech 8K HDMI Cable 2M - Black XHH01-BK,Choetech,664.00,EGP,10,HDMI Cables,Black
+XPRS-00188,Anker Nano USB C to HDMI Cable 6ft 4K@60Hz Ultra-Fast Braided Nylon Adapter Cable - Black,Anker,1348.00,EGP,10,HDMI Cables,Black|Gray
+XPRS-00189,Green Lion Trim Flex Hair & Beard Trimmer | Cordless Green/Black,Green Lion,1099.00,EGP,10,Hair Clippers & Trimmers,Green
+XPRS-00190,Green Lion Ultra Glide Shaver | Precision Grooming Black/Silver,Green Lion,1099.00,EGP,10,Hair Clippers & Trimmers,
+XPRS-00191,Oraimo Clipper Precise Blades – OPC‑CL30,Oraimo,1099.00,EGP,10,Hair Clippers & Trimmers,Silver
+XPRS-00192,Porodo Lifestyle Hair Clipper | Rechargeable LED Display Gray,Porodo,1099.00,EGP,10,Hair Clippers & Trimmers,Gray
+XPRS-00193,Green Lion Professional Hair Clipper | Type‑C Charging Green,Green Lion,1299.00,EGP,10,Hair Clippers & Trimmers,Green
+XPRS-00194,Oraimo Smart Clipper 2 Prestige – OPC‑CL33N,Oraimo,1499.00,EGP,10,Hair Clippers & Trimmers,Black
+XPRS-00195,Porodo Lifestyle Multi-purpose Beard Trimmer And Smooth Seamless Shave - Black,Porodo,1499.00,EGP,10,Hair Clippers & Trimmers,Black
+XPRS-00196,Green Lion Professional Hair Clipper | 1400mAh Rechargeable Black,Green Lion,1699.00,EGP,10,Hair Clippers & Trimmers,Black
+XPRS-00197,Xiaomi Grooming Kit Pro Waterproof Beard Trimmer & Electric Shaver – Black,Xiaomi,3299.00,EGP,10,Hair Clippers & Trimmers,
+XPRS-00198,"Enzo Hair Dryer 1600W, Powerful & Professional Blow Dryer - White - EN-6005",Enzo,1099.00,EGP,10,Hair Dryers,White
+XPRS-00199,"Rush Brush D2 Pro 2500W Hair Dryer, with Removable Air Filter - Black",Rush Brush,2099.00,EGP,10,Hair Dryers,Black
+XPRS-00200,Xiaomi Compact Hair Dryer H101 - White,Xiaomi,2199.00,EGP,10,Hair Dryers,White
+XPRS-00201,"Philips Hair Dryer Series 5000, 2100W - White - BHD500-00",Philips,2699.00,EGP,10,Hair Dryers,White
+XPRS-00202,"Rush Brush D3 Ultra Hair Dryer, 2400W, 3 Heat & 2 Speed - Rose Gold",Rush Brush,2899.00,EGP,10,Hair Dryers,Rose Gold
+XPRS-00203,Philips DryCare Prestige 2300W - Pink\White - HP8281,Philips,3899.00,EGP,10,Hair Dryers,Pink
+XPRS-00204,Rush Brush C1 Cool Curler | Fast Heat PTC System,Rush Brush,3799.00,EGP,10,Hair Straighteners,Pink|Purple
+XPRS-00205,RAVPower Stereo Wired Earphones 3.5mm Plug - Black,RAVPower,409.00,EGP,10,Headphones,Black
+XPRS-00206,RAVPower Stereo Wired Earphones Type-C Plug - Black,RAVPower,703.00,EGP,10,Headphones,Black
+XPRS-00207,Apple AirPods 4 with Active Noise Cancellation,Apple,13955.00,EGP,10,Headphones,
+XPRS-00208,L'avvento earphone HP66L with Mic 3.5mm Volume Control - Blue,L'avvento,292.00,EGP,10,Headphones & Headsets,Blue
+XPRS-00209,L'avvento earphone HP66R with Mic 3.5mm Volume Control - Red,L'avvento,292.00,EGP,10,Headphones & Headsets,Red
+XPRS-00210,L'avvento earphone HP66B with Mic 3.5mm Volume Control - Black,L'avvento,292.00,EGP,10,Headphones & Headsets,Black
+XPRS-00211,L'avvento (HP06A) Headphone Stereo Golden Plug With 40mm Speaker Driver - 1.5M - Gray,L'avvento,620.00,EGP,10,Headphones & Headsets,Gray
+XPRS-00212,Apple Airpods Max (USB-C),Apple,39055.00,EGP,10,Headphones & Headsets,Astral Black|Ocean Blue|Purple|Orange 12 F|White
+XPRS-00213,Recci Gaming Earphone RT23,Recci,930.00,EGP,10,Headsets,Black
+XPRS-00214,hoco Headphones W104 Drift gaming headset,Hoco,967.00,EGP,10,Headsets,Multicolor|Black|Blue|Red
+XPRS-00215,hoco Headphones W102 Cool tour gaming headset,Hoco,1407.00,EGP,10,Headsets,Multicolor|Black|Blue|Red
+XPRS-00216,Cellularline Vivid Headset TWS ANC - Black,Cellularline,2414.00,EGP,10,Headsets,Black
+XPRS-00217,Purity Electric Radiator 50*70-300W,Purity,11399.00,EGP,10,Heating Radiators,Black|Silver|Gold
+XPRS-00218,Purity Electric Radiator Black 50*90-400W,Purity,12599.00,EGP,10,Heating Radiators,Silver|Gold|Black
+XPRS-00219,Sony DualSense wireless controller for PS5 - Chroma Pearl,Sony,4499.00,EGP,10,Home Game Console Accessories,Chroma Pearl
+XPRS-00220,Sony DualSense wireless controller for PS5 - Starlight Blue,Sony,4499.00,EGP,10,Home Game Console Accessories,Sky Cyan
+XPRS-00221,Sony DualSense wireless controller for PS5 - Volcanic Red,Sony,4499.00,EGP,10,Home Game Console Accessories,Volcanic Red
+XPRS-00222,Sony DualSense wireless controller for PS5 - Burgundy,Sony,4499.00,EGP,10,Home Game Console Accessories,Burgundy
+XPRS-00223,Sony DualSense wireless controller for PS5 - Purple,Sony,4499.00,EGP,10,Home Game Console Accessories,Purple
+XPRS-00224,Sony DualSense wireless controller for PS5 - Pink,Sony,4499.00,EGP,10,Home Game Console Accessories,Pink
+XPRS-00225,BLOWBRUSHER 3‑in‑1 Hair Styling Brush | Black/RoseGold,BLOWBRUSHER,2599.00,EGP,10,Hot Air Brushes,Black
+XPRS-00226,Rush Brush V3 Pro Hair Straightener | 1400W 4 Temperatures,Rush Brush,5299.00,EGP,10,Hot Air Brushes,Black|Red|Navy Blue|Purple
+XPRS-00227,Recci REP-L37 In-Ear Professional Sound Isolation 3.5mm Headphones,Recci,175.00,EGP,10,In-Ear Headphones,Black
+XPRS-00228,L'avvento Wired Earphone With Mic And Volume Control 3.5mm - Black,L'avvento,209.00,EGP,10,In-Ear Headphones,Black
+XPRS-00229,RECCI REP-L27 HD SOUND WIRED EARPHONE (TYPE-C),Recci,230.00,EGP,10,In-Ear Headphones,White
+XPRS-00230,hoco Wired earphones 3.5mm M85 Platinum with mic - Black Night,Hoco,233.00,EGP,10,In-Ear Headphones,Black|Red
+XPRS-00231,hoco Wired earphones 3.5mm M85 Platinum with mic - silver,Hoco,281.00,EGP,10,In-Ear Headphones,
+XPRS-00232,hoco M115 Sagacious universal earphones with microphone Type-C,Hoco,294.00,EGP,10,In-Ear Headphones,
+XPRS-00233,Cellularline Capsule Earphones 3.5MM - White,Cellularline,382.00,EGP,10,In-Ear Headphones,White
+XPRS-00234,hoco Wired earphones M30 Glaring with microphone - Red,Hoco,416.00,EGP,10,In-Ear Headphones,
+XPRS-00235,hoco Wired earphones M30 Glaring with microphone - Orange,Hoco,416.00,EGP,10,In-Ear Headphones,
+XPRS-00236,Oraimo FreePods Neo ENC Wireless Earbuds (OTW-330S) Black,Oraimo,444.00,EGP,10,In-Ear Headphones,Black
+XPRS-00237,Recci REP-L09 Headphones In-Ear Wired with Microphone,Recci,455.00,EGP,10,In-Ear Headphones,White
+XPRS-00238,hoco Headphones W24 Enlighten wired with mic set with earphones,Hoco,527.00,EGP,10,In-Ear Headphones,Blue|Purple|Red|Multicolor|Gold
+XPRS-00239,Cellularline Capsule Earphones USB-C,Cellularline,527.00,EGP,10,In-Ear Headphones,White|Black
+XPRS-00240,Cellularline ORBIT Wired Earphones USB-C - White,Cellularline,703.00,EGP,10,In-Ear Headphones,White
+XPRS-00241,oraimo SpaceBuds Air 38 Hours Smart Finder True Wireless Earbuds,Oraimo,819.00,EGP,10,In-Ear Headphones,Black|White
+XPRS-00242,oraimo Necklace Lite Call Vibration Wireless Headphones,Oraimo,820.00,EGP,10,In-Ear Headphones,Black|Blue
+XPRS-00243,WiWU Airbuds True Wireless Stereo - White,wiwu,937.00,EGP,10,In-Ear Headphones,White
+XPRS-00244,Oraimo FreePods 3C True Wireless Earbuds - Black OEB-E104DC,Oraimo,979.00,EGP,10,In-Ear Headphones,Black
+XPRS-00245,Oraimo SpaceBuds Z ANC Earbuds (OTW-625) Black,Oraimo,995.00,EGP,10,In-Ear Headphones,Black
+XPRS-00246,Recci G600C Pro Wireless Earbuds Active Noise Cancellation (ANC) Touch Control,Recci,1025.00,EGP,10,In-Ear Headphones,White
+XPRS-00247,hoco Wired earphones 3.5mm M45 Promenade with microphone,Hoco,1037.00,EGP,10,In-Ear Headphones,
+XPRS-00248,WiWU Airbuds Pro True Wireless Stereo - White,wiwu,1055.00,EGP,10,In-Ear Headphones,White
+XPRS-00249,Choetech BH-T18 True Wireless Earbuds - Black,Choetech,1171.00,EGP,10,In-Ear Headphones,Black
+XPRS-00250,Philips 1000 Series Earbuds,Philips,1199.00,EGP,10,In-Ear Headphones,Black|White
+XPRS-00251,WiWU T12 Pure Sound True Wireless Stereo Earbuds - Black,wiwu,1288.00,EGP,10,In-Ear Headphones,Black
+XPRS-00252,SoundPeats Clear Wireless EarBuds-Black,SoundPeats,1395.00,EGP,10,In-Ear Headphones,
+XPRS-00253,WiWU Earbuds Pro 2 True Wireless Stereo - White,wiwu,1407.00,EGP,10,In-Ear Headphones,White
+XPRS-00254,CardoO Buds ANC,CardoO,1549.00,EGP,10,In-Ear Headphones,Black|White
+XPRS-00255,Choetech BH-T17 True Wireless Earbuds - Black,Choetech,1776.00,EGP,10,In-Ear Headphones,Black
+XPRS-00256,Philips 3000 Series Noise Canceling Earbuds - Black,Philips,1873.00,EGP,10,In-Ear Headphones,
+XPRS-00257,CellularLine Crystal Earphones TWS ENC - Blue,Cellularline,2282.00,EGP,10,In-Ear Headphones,Blue
+XPRS-00258,Anker Soundcore C30i Earbuds Black,Anker,2299.00,EGP,10,In-Ear Headphones,Black
+XPRS-00259,oraimo SpaceBuds Hybrid ANC True Wireless Earbuds Customized Voice Prompt,Oraimo,2461.00,EGP,10,In-Ear Headphones,Black|White
+XPRS-00260,Nothing CMF Buds 2A,CMF,2615.00,EGP,10,In-Ear Headphones,Black|Gray|Orange 12 F
+XPRS-00261,Nothing CMF Buds,CMF,2929.00,EGP,10,In-Ear Headphones,Black|Gray|Orange 12 F
+XPRS-00262,Nothing CMF Buds Pro,CMF,3020.00,EGP,10,In-Ear Headphones,Black|Gray|Orange 12 F
+XPRS-00263,Nothing CMF Buds Pro 2,CMF,3870.00,EGP,10,In-Ear Headphones,Blue|Orange 12 F
+XPRS-00264,Anker Soundcore P41i Wireless Earbuds With Portable Phone Charger (Built-In),Anker,3900.00,EGP,10,In-Ear Headphones,Black|White
+XPRS-00265,Oraimo SpaceBuds Pro Hybrid ANC Wireless Earbuds OTW-930,Oraimo,4098.00,EGP,10,In-Ear Headphones,Gray
+XPRS-00266,Motorola moto Buds XT2443-1 Wireless Earbuds,Motorola,4103.00,EGP,10,In-Ear Headphones,Black|Skyline Blue
+XPRS-00267,Nothing Earbuds ear (a),Nothing,8211.00,EGP,10,In-Ear Headphones,White|Black
+XPRS-00268,Apple AirPods 4,Apple,11184.00,EGP,10,In-Ear Headphones,White
+XPRS-00269,"Philips 1000 Series Steam Iron, 1800 Watt, 250 ml, Purple White - DST1020/30",Philips,1199.00,EGP,10,Irons,Purple
+XPRS-00270,"Philips Steam Iron DST3020, 2200W Powerful Steam to Tackle Every Crease - Blue",Philips,2099.00,EGP,10,Irons,Blue
+XPRS-00271,"Tornado Portable Steam Iron, 1100 Watts - White and Blue - TST-HS1300",Tornado,3599.00,EGP,10,Irons,White
+XPRS-00272,"Xiaomi Mijia Portable Blender, White – MJZZB02PL",Xiaomi,2199.00,EGP,10,Juicers,White
+XPRS-00273,"HP 14a-na0702ds 14"" HD Chromebook, Intel Celeron N4120, 1.10GHz, 4GB RAM, 128GB eMMC, ChromeOS",HP,13000.00,EGP,10,Laptops,White
+XPRS-00274,"ASUS Vivobook Go 15 (E1504FA-BQ8233W) Amd Ryzen 3-30, 8GB RAM, 256GB SSD, AMD Radeon™ Graphics, 15.6"" 60Hz Display, Win11 H",ASUS,19333.00,EGP,10,Laptops,Silver|Gray
+XPRS-00275,LENOVO IdeaPad Slim 3 15IRH8 - Intel Core i5-13420H - Intel UHD Graphics (16GB Ram / 512GB SSD) with Bag - Win11 H - 2Y Warranty - Grey,Lenovo,28888.00,EGP,10,Laptops,Gray
+XPRS-00276,"ASUS Vivobook 16 (X1605VA-OACH565W) Intel Core i5-13420H, 16GB RAM, 512GB SSD, Intel® UHD Graphics, 16"" OLED 60Hz Display, Win11 H",ASUS,32999.00,EGP,10,Laptops,Silver
+XPRS-00277,"ASUS Vivobook 16 (X1605VA-ACH007W) Intel Core i7-13620H, 16GB RAM, 512GB SSD, Intel® UHD Graphics, 16"" 60Hz Display, Win11 H",ASUS,34299.00,EGP,10,Laptops,Silver
+XPRS-00278,"ASUS Vivobook 16 (X1605VA-OLED507W) Intel Core i7-13620H, 16GB RAM, 512GB SSD, Intel® UHD Graphics, 16"" OLED 60Hz Display, Win11 H",ASUS,37777.00,EGP,10,Laptops,Silver
+XPRS-00279,"ASUS Vivobook 16 (X1607QA-MB054W) Snapdragon® X1-26 16GB RAM, 1TB SSD, Qualcomm® Adreno™ GPU, 16"" 60Hz Display, Win11 H",ASUS,39333.00,EGP,10,Laptops,Silver
+XPRS-00280,Lenovo Think Pad E14 Gen 6 - Intel Core Ultra 7 155H - 16GB Ram - 512GB SSD - Intel Arc Graphics,Lenovo,45999.00,EGP,10,Laptops,Black|Gray
+XPRS-00281,"MSI Modern 15 H AI C2HM, Intel Core Ultra 9 285H, 16GB RAM, 1TB SSD, Intel® Arc Graphics, 15.6” FHD 60Hz, Win11, Classic Black - 9S7-15H551-266",MSI,48122.00,EGP,10,Laptops,Black
+XPRS-00282,ASUS Zenbook A14 ( UX3407QA-QD232W ) Qualcom Snapdragon X X1 26 100 Adreno GPU – (16GB / 1TB) 14-INCH OLED Display – Win 11,ASUS,48999.00,EGP,10,Laptops,Gray
+XPRS-00283,ASUS Vivobook 14 Flip (TP3407SA-QL039W) OLED 14-Inch Touch Screen - Ultra 7 256V - 16GB Ram 512GB - Intel Arc - Windows 11,ASUS,52499.00,EGP,10,Laptops,Gray
+XPRS-00284,ASUS Vivobook S16 (M5606KA-RI417W) OLED – 16-INCH 3K 120Hz Display- AMD Ryzen AI 7 350 - 24GB Ram 1TB SSD – Windows 11,ASUS,52900.00,EGP,10,Laptops,Silver
+XPRS-00285,ASUS TUF Gaming F16 (FX607VU-RL165W) IntelCore 5 210H - RTX 4050 (16GB Ram / 512GB SSD) 16 INCH FHD 144Hz Display - Windows 11,ASUS,53299.00,EGP,10,Laptops,Black|Gold
+XPRS-00286,"ASUS TUF Gaming F16 (FX607VU-RL167W) Intel Core 7 240H, 16GB RAM, 512GB SSD RTX, 4050-6G, 16"" 144Hz Display, Win11 H",ASUS,59999.00,EGP,10,Laptops,Black
+XPRS-00287,"ASUS Zenbook 14 (UM3406GA-QL157W) AMD Ryzen AI 7 445, 16GB RAM, 512GB SSD, AMD Radeon™ Graphics, 14"" 60Hz Display Win11 H",ASUS,61999.00,EGP,10,Laptops,Gray|Black
+XPRS-00288,"ASUS Zenbook 14 (UX3405CA-NT319W) Intel CORE ULTRA 9 285H, 32GB RAM, 1TB SSD, Intel® Arc™ Graphics, 14"" NON-TOUCH 120Hz, Win11 H",ASUS,82111.00,EGP,10,Laptops,Silver
+XPRS-00289,"ASUS Zenbook 14 (UX3405CA-SU319W) Intel CORE ULTRA 9 285H, 32GB RAM, 1TB SSD, Intel® Arc™ Graphics, 14"" TOUCH Screen 120Hz, Win11 H",ASUS,84999.00,EGP,10,Laptops,Silver
+XPRS-00290,"MSI Summit 13 AI Evo - X360 Intel Core Ultra9 288V AI+ Evo - 32GB Ram, 1TB SSD Storage - 13.3 inches Display touch Screen - Finger Print",MSI,89099.00,EGP,10,Laptops,Black
+XPRS-00291,ASUS Zenbook DUO (UX8406MA) Ultra 7 155H - Intel Arc Graphics  (16GB Ram / 1TB SSD) 14 inches 3K OLED Touchscreen - Windows 11 - Sleeve Included - Inkwell Grey,ASUS,103999.00,EGP,10,Laptops,Black
+XPRS-00292,MSI Vector 16 HX AI A2XWIG - Intel Core Ultra 9 275HX - RTX 5080 - 16 GB Ram - 1TB SSD,MSI,159000.00,EGP,10,Laptops,Gray
+XPRS-00293,l'avvento (MO34W) 2.4GHz Wireless Mouse - White,L'avvento,550.00,EGP,10,Mice & Trackballs,
+XPRS-00294,Recci Space Capsule Wireless Mouse Recci RCS-M01,Recci,815.00,EGP,10,Mice & Trackballs,Gray|Clear
+XPRS-00295,L’avvento Mouse Dual Mode Bluetooth 2.4GHz with Re-Chargeable Battery - Grey,L'avvento,818.00,EGP,10,Mice & Trackballs,
+XPRS-00296,RODE PSA1 Studio Arm,RODE,6000.00,EGP,10,Microphone Accessories,Black
+XPRS-00297,Recci Wireless Lavalier ENC Microphone RA39,Recci,1645.00,EGP,10,Microphones,Black
+XPRS-00298,RODE NT-USB Mini Studio-Quality USB Microphone,RODE,6500.00,EGP,10,Microphones,Black|Multicolor
+XPRS-00299,RODE Wireless Micro,RODE,8500.00,EGP,10,Microphones,Black|White
+XPRS-00300,RODE XCM-50 Microphone,RODE,8500.00,EGP,10,Microphones,Black
+XPRS-00301,RODE Wireless GO II (Single),RODE,9000.00,EGP,10,Microphones,Black
+XPRS-00302,RODE Podcaster Dynamic Broadcast USB Microphone,RODE,10000.00,EGP,10,Microphones,White
+XPRS-00303,RODE NT-USB+ Professional USB Microphone,RODE,11000.00,EGP,10,Microphones,Black|Multicolor
+XPRS-00304,RODE Wireless GO II (Dual),RODE,12000.00,EGP,10,Microphones,Black
+XPRS-00305,RODE PodMic USB Dynamic Broadcast Microphone,RODE,14000.00,EGP,10,Microphones,Black
+XPRS-00306,RODE Interview PRO Wireless Microphone Specification,RODE,14000.00,EGP,10,Microphones,Black
+XPRS-00307,RODE Wireless GO (Gen 3),RODE,15000.00,EGP,10,Microphones,Black|Blue|Red|Green|Orange 12 F|Pink|Purple|White|Clay
+XPRS-00308,RODE Wireless PRO Premium Wireless Microphone System,RODE,20000.00,EGP,10,Microphones,Black
+XPRS-00309,RODE Broadcaster Microphone,RODE,22000.00,EGP,10,Microphones,Silver|White
+XPRS-00310,"Armadillo Microwave Digital 30L, 950-1320W - Silver",Armadillo,6299.00,EGP,10,Microwave Ovens,
+XPRS-00311,Tornado Microwave Solo 25 Liter 900 Watt Silver - TM-25MS,Tornado,7099.00,EGP,10,Microwave Ovens,Silver
+XPRS-00312,"Samsung Digital Solo Microwave, 23 Liter, 800 Watt, White - MS23K3614AW/GY",Samsung,7599.00,EGP,10,Microwave Ovens,White
+XPRS-00313,"Tornado Solo Microwave, 900 Watt, 25 Liter, Large LED Display - Black - TMD-25SE-BK",Tornado,7699.00,EGP,10,Microwave Ovens,Black
+XPRS-00314,Tornado Microwave Grill 36 Liter 1000 Watt 6 Feet Stainless - TMD-36GE-SS,Tornado,10299.00,EGP,10,Microwave Ovens,Silver
+XPRS-00315,Sharp Microwave Grill 34 Liter 1000 Watt 9 Menus Stainless - R-770AR(ST),Sharp,11699.00,EGP,10,Microwave Ovens,Silver
+XPRS-00316,"Samsung Digital Solo Microwave, 32 Liter, 1500 Watt, Black - MS32DG4504AT/GY",Samsung,12499.00,EGP,10,Microwave Ovens,
+XPRS-00317,Samsung Digital Microwave With Grill 32 Liter 900 Watt - Black - MG32DG4524AGGY,Samsung,12899.00,EGP,10,Microwave Ovens,
+XPRS-00318,"Samsung Microwave with Grill, 40 Liters, Black and Silver - MG40DG5524ATGY",Samsung,14499.00,EGP,10,Microwave Ovens,
+XPRS-00319,Apple AirTag 1 Pack,Apple,2990.00,EGP,10,Mobile & Smart Phone Accessories,White
+XPRS-00320,Apple AirTag 4 Pack,Apple,9121.00,EGP,10,Mobile & Smart Phone Accessories,White
+XPRS-00321,"Infinix Smart 10 - 4G Dual Sim, 3GB RAM, 64GB",Infinix,5149.00,EGP,10,Mobile & Smart Phones,Blue|Gold|Black|Titanium
+XPRS-00322,Samsung Galaxy A07 4G - 4GB Ram - 64GB (Local Warranty),Samsung,5660.00,EGP,10,Mobile & Smart Phones,Gray|Light Purple|Dark Green
+XPRS-00323,"Infinix Smart 10 - 4G Dual Sim, 4GB RAM, 128GB",Infinix,5777.00,EGP,10,Mobile & Smart Phones,Blue|Gold|Black|Titanium White Silver
+XPRS-00324,Honor X5c 4G - 4GB Ram - 64GB (Local Warranty),Honor,6390.00,EGP,10,Mobile & Smart Phones,Black|Cyan
+XPRS-00325,Xiaomi redmi A5 (4GB Ram / 128GB) (Local Warranty),Xiaomi,6499.00,EGP,10,Mobile & Smart Phones,Midnight|Gold|Green
+XPRS-00326,Samsung Galaxy A07 4G - 4GB Ram - 128GB (Local Warranty),Samsung,6770.00,EGP,10,Mobile & Smart Phones,Gray|Light Purple|Dark Green
+XPRS-00327,Vivo Y05 4G 4GB 64GB,VIVO,6790.00,EGP,10,Mobile & Smart Phones,
+XPRS-00328,"Samsung Galaxy A06 - 4G, Dual Sim 6GB Ram 128GB (ضمان الوكيل)",Samsung,6928.00,EGP,10,Mobile & Smart Phones,Black|Blue|Gold
+XPRS-00329,"Realme Note 60X Dual Sim, 4G , 4GB RAM - 128GB ( ضمان الوكيل )",Realme,6999.00,EGP,10,Mobile & Smart Phones,
+XPRS-00330,Honor X5c Plus 4G - 4GB Ram - 128GB (Local Warranty),Honor,7070.00,EGP,10,Mobile & Smart Phones,Cyan|Black
+XPRS-00331,Infinix Hot 60i (6GB RAM / 128GB),Infinix,7350.00,EGP,10,Mobile & Smart Phones,Black|Silver|Deep Blue
+XPRS-00332,Honor X6C 4G (6GB Ram/128GB) (Local Warranty),Honor,7555.00,EGP,10,Mobile & Smart Phones,Cyan|Black|White
+XPRS-00333,Samsung Galaxy A07 4G - 6GB Ram - 128GB (Local Warranty),Samsung,7660.00,EGP,10,Mobile & Smart Phones,Gray|Light Purple|Dark Green
+XPRS-00334,Xiaomi Redmi 15C 4G - 6GB Ram - 128GB Storage - (ضمان الوكيل),Xiaomi,7699.00,EGP,10,Mobile & Smart Phones,Black
+XPRS-00335,Vivo Y05 4G 4GB 128GB,VIVO,7790.00,EGP,10,Mobile & Smart Phones,
+XPRS-00336,Oppo A5X 4G Dual SIM (4GB Ram/ 128GB) (Local Warranty),OPPO,7812.00,EGP,10,Mobile & Smart Phones,White|Navy Blue
+XPRS-00337,Honor X6C 4G (6GB Ram/256GB) (Local Warranty),Honor,7899.00,EGP,10,Mobile & Smart Phones,Cyan|Black|White
+XPRS-00338,Vivo Y19s 4G - 6GB Ram - 128GB (Local Warranty),VIVO,8045.00,EGP,10,Mobile & Smart Phones,Black|Silver
+XPRS-00339,Infinix Hot 60 5G - 6GB Ram - 128GB (Local Warranty),Infinix,8099.00,EGP,10,Mobile & Smart Phones,Blue|Brown|Green|Gray|Silver
+XPRS-00340,Vivo Y19s Pro - 6GB Ram - 128GB (Local Warranty),VIVO,8157.00,EGP,10,Mobile & Smart Phones,Black|Silver
+XPRS-00341,"Motorola Moto G35 5G - 256GB, 8GB RAM (ضمان الوكيل)",Motorola,8157.00,EGP,10,Mobile & Smart Phones,Black|Bronze|Leaf Green
+XPRS-00342,Vivo Y19s Pro - 6GB Ram - 256GB (Local Warranty),VIVO,8381.00,EGP,10,Mobile & Smart Phones,Black|Silver
+XPRS-00343,Xiaomi Redmi 15C 4G - 8GB Ram - 256GB Storage - (ضمان الوكيل),Xiaomi,8499.00,EGP,10,Mobile & Smart Phones,Black
+XPRS-00344,Infinix Hot 60i (8GB RAM / 256GB),Infinix,8699.00,EGP,10,Mobile & Smart Phones,Black|Silver|Deep Blue
+XPRS-00345,Vivo Y29 4G - 8GB Ram - 128GB (Local warranty),VIVO,8870.00,EGP,10,Mobile & Smart Phones,Brown|White
+XPRS-00346,Xiaomi Redmi 15 4G (6GB Ram / 128GB) (Local Warranty),Xiaomi,8899.00,EGP,10,Mobile & Smart Phones,Black|Purple|Gray
+XPRS-00347,Samsung Galaxy A17 4G - 4GB Ram - 128GB (Local Warranty),Samsung,8990.00,EGP,10,Mobile & Smart Phones,Black|Gray|Light Blue
+XPRS-00348,Vivo Y21d 4G - 6GB Ram - 128GB (Local Warranty),VIVO,9690.00,EGP,10,Mobile & Smart Phones,Jade Green|Coral Red
+XPRS-00349,"Oppo A6 4G - 4GB Ram, 128GB",OPPO,9699.00,EGP,10,Mobile & Smart Phones,Sapphire Blue|Aurora Gold
+XPRS-00350,Infinix Hot 60 pro (8GB Ram/256GB Storage) (Local Warranty),Infinix,9888.00,EGP,10,Mobile & Smart Phones,Silver|Black|Coral
+XPRS-00351,Xiaomi Redmi 15 4G (8GB Ram / 256GB) (Local Warranty),Xiaomi,9899.00,EGP,10,Mobile & Smart Phones,Black|Purple|Gray
+XPRS-00352,Vivo Y29 4G - 8GB Ram - 256GB (Local Warranty),VIVO,9910.00,EGP,10,Mobile & Smart Phones,Brown|White
+XPRS-00353,Samsung Galaxy A07 4G - 8GB Ram - 256GB (Local Warranty),Samsung,9999.00,EGP,10,Mobile & Smart Phones,Black|Light Purple|Dark Green
+XPRS-00354,Samsung Galaxy A17 4G - 6GB Ram - 128GB (Local Warranty),Samsung,9999.00,EGP,10,Mobile & Smart Phones,Black|Gray|Light Blue
+XPRS-00355,Vivo Y21d 4G - 6GB Ram - 256GB (Local Warranty),VIVO,10590.00,EGP,10,Mobile & Smart Phones,Jade Green|Coral Red
+XPRS-00356,"Oppo A6 4G - 6GB Ram, 128GB",OPPO,10999.00,EGP,10,Mobile & Smart Phones,Sapphire Blue|Aurora Gold
+XPRS-00357,Honor X7D 4G (8GB Ram/256GB) (Local Warranty),Honor,11111.00,EGP,10,Mobile & Smart Phones,Desert Gold|Silver|Black
+XPRS-00358,Xiaomi Redmi Note 15 4G 6GB Ram 128GB,Xiaomi,11499.00,EGP,10,Mobile & Smart Phones,Purple|Black|Forest Green|Blue
+XPRS-00359,Motorola Moto G56 Dual SIM (12GB Ram/ 256GB) (Local Warranty),Motorola,11555.00,EGP,10,Mobile & Smart Phones,Green|Blue
+XPRS-00360,Infinix Hot 60 Pro plus 8GB Ram - 256GB (Local Warranty),Infinix,11777.00,EGP,10,Mobile & Smart Phones,Sleek Black|Silver|Coral
+XPRS-00361,Samsung Galaxy A17 4G - 8GB Ram - 256GB (Local Warranty),Samsung,11950.00,EGP,10,Mobile & Smart Phones,Black|Gray|Light Blue
+XPRS-00362,Vivo Y31D 4G 8GB 128GB,VIVO,11990.00,EGP,10,Mobile & Smart Phones,Gold|Gray
+XPRS-00363,Nothing CMF Phone 1 8GB Ram 128GB (official warranty),Nothing,12199.00,EGP,10,Mobile & Smart Phones,Gray|Green|Orange 12 F
+XPRS-00364,Motorola Moto G85 5G (256GB/12GB RAM) (Local Warranty),Motorola,12399.00,EGP,10,Mobile & Smart Phones,Gray|Blue|Green|Yellow
+XPRS-00365,Xiaomi Redmi Note 15 4G 8GB Ram 256GB,Xiaomi,12499.00,EGP,10,Mobile & Smart Phones,Purple|Black|Forest Green|Blue
+XPRS-00366,Vivo Y31D 4G 8GB 256GB,VIVO,12990.00,EGP,10,Mobile & Smart Phones,Gold|Gray
+XPRS-00367,"Realme 14T ,Dual Sim,5G , 8GB RAM - 256GB ( ضمان الوكيل )",Realme,12990.00,EGP,10,Mobile & Smart Phones,
+XPRS-00368,"Oppo A6 4G - 8GB Ram, 256GB",OPPO,12999.00,EGP,10,Mobile & Smart Phones,Sapphire Blue|Aurora Gold
+XPRS-00369,Samsung Galaxy A26 Dual Sim 5G 6GB 128GB (ضمان الوكيل),Samsung,13444.00,EGP,10,Mobile & Smart Phones,Black|Pink|White
+XPRS-00370,Infinix Note 50S 5G - 8GB Ram - 256GB (Local Warranty),Infinix,13999.00,EGP,10,Mobile & Smart Phones,Blue|Gray|Red
+XPRS-00371,Vivo V60 Lite 4G (8GB Ram / 256GB) (Local Warranty),VIVO,14361.00,EGP,10,Mobile & Smart Phones,Titanium Mist Blue|Ocean Night Black
+XPRS-00372,"Motorola Moto G75 5G - 256GB, 8GB RAM (ضمان الوكيل)",Motorola,14526.00,EGP,10,Mobile & Smart Phones,Black|Blue|Light Green
+XPRS-00373,Xiaomi Redmi Note 14 Pro 4G - 8GB Ram - 256GB (Local Warranty),Xiaomi,14528.00,EGP,10,Mobile & Smart Phones,Midnight|Teal|Ultramarine
+XPRS-00374,Samsung Galaxy A17 5G 8GB Ram 256GB,Samsung,14560.00,EGP,10,Mobile & Smart Phones,Black|Gray
+XPRS-00375,Vivo V50 Lite 4G - 8GB Ram - 256GB (Local Warranty),VIVO,14744.00,EGP,10,Mobile & Smart Phones,Cyan|Gold
+XPRS-00376,Honor X8C Dual SIM (8GB Ram/512GB) (Local Warranty),Honor,14901.00,EGP,10,Mobile & Smart Phones,Cyan|White|Black
+XPRS-00377,Honor X7D 5G (8GB Ram/256GB) (Local Warranty),Honor,14999.00,EGP,10,Mobile & Smart Phones,Desert Gold|Silver|Black
+XPRS-00378,"Honor X8D - 8GB RAM, 256GB",Honor,15490.00,EGP,10,Mobile & Smart Phones,Black|Light Blue|Gray
+XPRS-00379,Xiaomi Redmi Note 15 5G 8GB Ram 256GB,Xiaomi,15699.00,EGP,10,Mobile & Smart Phones,Black|Blue|Mist Purple
+XPRS-00380,"Realme C75 4G 256GB, 8GB RAM, Gold ( ضمان الوكيل )",Realme,15775.00,EGP,10,Mobile & Smart Phones,
+XPRS-00381,"Oppo A6 Pro 4G - 8GB Ram, 256GB",OPPO,15888.00,EGP,10,Mobile & Smart Phones,Coral Pink|Stellar Blue
+XPRS-00382,"Infinix Note Edge 5G Dual Sim - 8GB Ram, 256GB",Infinix,15970.00,EGP,10,Mobile & Smart Phones,Lunar Titanium|Silk Green|Stellar Blue|Shadow Black
+XPRS-00383,Vivo V60 Lite 5G - 8GB Ram - 256GB (Local Warranty),VIVO,15990.00,EGP,10,Mobile & Smart Phones,Titanium Mist Blue|Ocean Night Black
+XPRS-00384,Honor 400 Lite 5G - 8GB Ram - 256GB (Local Warranty),Honor,15999.00,EGP,10,Mobile & Smart Phones,Gray|Green|Black
+XPRS-00385,Motorola Edge 60 Fusion 5G,Motorola,16699.00,EGP,10,Mobile & Smart Phones,Blue|Pink
+XPRS-00386,Motorola Edge 50 fusion,Motorola,16999.00,EGP,10,Mobile & Smart Phones,Blue|Pink|Forest Green
+XPRS-00387,"Honor X8D - 8GB RAM, 512GB",Honor,17555.00,EGP,10,Mobile & Smart Phones,Black|Light Blue|Gray
+XPRS-00388,"Oppo A6 Pro 5G - 8GB Ram, 256GB",OPPO,17888.00,EGP,10,Mobile & Smart Phones,Stellar Blue|Coral Pink
+XPRS-00389,Xiaomi Redmi Note 14 Pro 4G - 12GB Ram - 512GB Storage (Local Warranty),Xiaomi,17915.00,EGP,10,Mobile & Smart Phones,Midnight|Teal|Ultramarine
+XPRS-00390,Vivo V60 Lite 5G - 12GB Ram - 256GB (Local Warranty),VIVO,17990.00,EGP,10,Mobile & Smart Phones,Titanium Mist Blue|Ocean Night Black
+XPRS-00391,Samsung Galaxy A36 5G - 8GB Ram - 128GB (Local Warranty),Samsung,17999.00,EGP,10,Mobile & Smart Phones,Awesome Black|Awesome White|Awesome Lavender|Awesome Lime
+XPRS-00392,Samsung Galaxy A26 5G - 8GB Ram - 256GB (Local Warranty),Samsung,17999.00,EGP,10,Mobile & Smart Phones,Black|Pink|White
+XPRS-00393,Xiaomi Redmi Note 15 5G 12GB Ram 512GB,Xiaomi,19499.00,EGP,10,Mobile & Smart Phones,Black|Blue|Mist Purple
+XPRS-00394,Realme 14 Pro 5G (12GB Ram/256GB) (Local Warranty) + Realme Buds T110 gift,Realme,19999.00,EGP,10,Mobile & Smart Phones,White|Gray
+XPRS-00395,"Realme 14 5G Dual Sim, 12GB RAM/ 256GB - Storm Titanium ( ضمان الوكيل )",Realme,20116.00,EGP,10,Mobile & Smart Phones,Black|Gray
+XPRS-00396,Samsung Galaxy A36 5G - 8GB Ram - 256GB (Local Warranty),Samsung,20999.00,EGP,10,Mobile & Smart Phones,Awesome Black|Awesome White|Awesome Lavender|Awesome Lime
+XPRS-00397,Infinix GT 30 Pro 5G - 12GB Ram - 512GB - Dark Flare (Local Warranty),Infinix,21111.00,EGP,10,Mobile & Smart Phones,Red|Blue|Black|Geometric|Gray
+XPRS-00398,Nothing Phone (3a) 8GB Ram 128GB (Official Warranty),Nothing,21234.00,EGP,10,Mobile & Smart Phones,Black|White|Blue
+XPRS-00399,Xiaomi Redmi Note 15 pro 5G 12GB Ram 256GB,Xiaomi,21799.00,EGP,10,Mobile & Smart Phones,Titanium|Blue|Black
+XPRS-00400,Xiaomi Redmi Note 14 Pro Plus 5G (12GB Ram/ 256GB) (Local Warranty),Xiaomi,21999.00,EGP,10,Mobile & Smart Phones,Midnight|Purple
+XPRS-00401,Honor 600 Lite 5G 8GB Ram 256GB,Honor,22120.00,EGP,10,Mobile & Smart Phones,Velvet Gray|Desert Gold|Black|Green
+XPRS-00402,Samsung Galaxy A56 5G - 8GB Ram - 128GB (Local Warranty),Samsung,22888.00,EGP,10,Mobile & Smart Phones,Black|Gray|Pink|Olive 12 F
+XPRS-00403,Vivo V70 FE 5G 8GB 256GB,VIVO,22990.00,EGP,10,Mobile & Smart Phones,Navy Blue|Blue
+XPRS-00404,"Oppo Reno 15F 5G Dual Sim – 8GB Ram, 256GB",OPPO,22999.00,EGP,10,Mobile & Smart Phones,Twilight Blue|Aurora Blue
+XPRS-00405,Xiaomi Redmi Note 15 pro 5G 12GB Ram 512GB,Xiaomi,24999.00,EGP,10,Mobile & Smart Phones,Titanium|Blue|Black
+XPRS-00406,"Oppo Reno 15F 5G Dual Sim – 12GB Ram, 256GB",OPPO,24999.00,EGP,10,Mobile & Smart Phones,Twilight Blue|Aurora White
+XPRS-00407,honor X9D 5G - 12GB Ram - 256GB (Local Warranty),Honor,24999.00,EGP,10,Mobile & Smart Phones,Black|Sunrise Gold|Reddish Brown|Forest Green
+XPRS-00408,Honor 400 5G - 12GB RAM - 256GB (Local Warranty),Honor,24999.00,EGP,10,Mobile & Smart Phones,Silver|Black|Desert Gold
+XPRS-00409,Samsung Galaxy A56 5G - 8GB Ram - 256GB (Local Warranty),Samsung,24999.00,EGP,10,Mobile & Smart Phones,Black|Gray|Olive 12 F|Pink
+XPRS-00410,Vivo V60 5G - 12GB Ram - 256GB (Local Warranty),VIVO,25499.00,EGP,10,Mobile & Smart Phones,Gray|Gold
+XPRS-00411,Vivo V70 FE 5G 12GB 256GB,VIVO,25990.00,EGP,10,Mobile & Smart Phones,Blue|Navy Blue
+XPRS-00412,Nothing Phone (3a) 12GB Ram 256GB (Official Warranty),Nothing,26487.00,EGP,10,Mobile & Smart Phones,Black|White|Blue
+XPRS-00413,Honor 400 5G - 12GB Ram - 512GB (Local Warranty),Honor,26999.00,EGP,10,Mobile & Smart Phones,Silver|Black|Desert Gold
+XPRS-00414,Samsung Galaxy A57 5G 8GB 256GB,Samsung,27490.00,EGP,10,Mobile & Smart Phones,Gray|Navy Blue|Lilac|Ice Blue
+XPRS-00415,Xiaomi Redmi Note 15 pro+ 5G 12GB Ram 256GB,Xiaomi,27499.00,EGP,10,Mobile & Smart Phones,Mocha Brown|Blue|Black
+XPRS-00416,Vivo V60 - 12GB Ram - 512GB (Local Warranty),VIVO,27499.00,EGP,10,Mobile & Smart Phones,Gray|Gold
+XPRS-00417,Samsung Galaxy A56 5G - 12GB Ram - 256GB (Local Warranty),Samsung,27888.00,EGP,10,Mobile & Smart Phones,Black|Gray|Olive 12 F|Pink
+XPRS-00418,Oppo Reno 15 Dual Sim 5G – 12GB Ram – 256GB,OPPO,29990.00,EGP,10,Mobile & Smart Phones,Twilight Blue|Aourora White
+XPRS-00419,Xiaomi Redmi Note 15 pro+ 5G 12GB Ram 512GB,Xiaomi,29999.00,EGP,10,Mobile & Smart Phones,Mocha Brown|Blue|Black
+XPRS-00420,Samsung Galaxy A57 5G 12GB 256GB,Samsung,30490.00,EGP,10,Mobile & Smart Phones,Gray|Navy Blue|Lilac|Ice Blue
+XPRS-00421,Vivo V70 5G 12GB Ram 256GB,VIVO,31990.00,EGP,10,Mobile & Smart Phones,Passion Red|Lemon Yellow
+XPRS-00422,Oppo Reno 15 Dual Sim 5G – 12GB Ram – 512GB,OPPO,32888.00,EGP,10,Mobile & Smart Phones,Twilight Blue|Aourora White
+XPRS-00423,"Vivo V70 5G - 12GB Ram, 512GB",VIVO,34990.00,EGP,10,Mobile & Smart Phones,Lemon Yellow|Passion Red
+XPRS-00424,Nothing Phone 3a pro 12GB Ram 256GB (Official Warranty),Nothing,35428.00,EGP,10,Mobile & Smart Phones,Black|Gray
+XPRS-00425,Samsung Galaxy A57 5G 12GB 512GB,Samsung,36480.00,EGP,10,Mobile & Smart Phones,Gray|Navy Blue|Lilac|Ice Blue
+XPRS-00426,Samsung Galaxy S25 FE 5G (8GB Ram / 256GB) (Local Warranty),Samsung,39490.00,EGP,10,Mobile & Smart Phones,White|Black|Ice Blue|Navy Blue
+XPRS-00427,Oppo Reno 15 5G Pro Dual Sim – 12GB Ram – 512GB,OPPO,39990.00,EGP,10,Mobile & Smart Phones,Aurora Blue|Dusk Brown
+XPRS-00428,Honor 400 Pro 5G - 12GB RAM - 512GB (Local Warranty),Honor,39999.00,EGP,10,Mobile & Smart Phones,Gray|Black|Blue
+XPRS-00429,Samsung Galaxy S25 FE 5G - 8GB Ram - 512GB (Local Warranty),Samsung,42222.00,EGP,10,Mobile & Smart Phones,White|Black|Ice Blue|Navy Blue
+XPRS-00430,iPhone 16e 128GB,Apple,48000.00,EGP,10,Mobile & Smart Phones,Black|Silver
+XPRS-00431,Samsung Galaxy S25 5G (12GB Ram / 256GB) (Local Warranty),Samsung,48282.00,EGP,10,Mobile & Smart Phones,Navy Blue|Black|White
+XPRS-00432,Samsung Galaxy S26 5G 12GB Ram 256GB,Samsung,49500.00,EGP,10,Mobile & Smart Phones,Black|Cobalt Violet|Sky Blue|White
+XPRS-00433,Samsung Galaxy S25 Plus 5G (12GB Ram/ 256GB) (Local Warranty),Samsung,53757.00,EGP,10,Mobile & Smart Phones,Navy Blue|Luminous Blue|Light Green
+XPRS-00434,Samsung Galaxy S26+ 5G 12GB Ram 256GB,Samsung,59000.00,EGP,10,Mobile & Smart Phones,Black|Cobalt Violet|Sky Blue|White
+XPRS-00435,Samsung Galaxy S25 Ultra 5G (12GB / 256GB) Dual Sim & eSIM (Official Warranty),Samsung,65500.00,EGP,10,Mobile & Smart Phones,Titanium Black|Gray|Titanium White Silver|Titanium Silverblue
+XPRS-00436,OPPO Find X9 Pro 5G,OPPO,69999.00,EGP,10,Mobile & Smart Phones,Silk White|Titanium Charcoal
+XPRS-00437,Honor Magic 8 Pro 5G - 12GB - 512GB,Honor,71999.00,EGP,10,Mobile & Smart Phones,Sunrise Gold|Black|Blue
+XPRS-00438,Samsung Galaxy S26 Ultra 5G 12GB Ram 256GB,Samsung,72400.00,EGP,10,Mobile & Smart Phones,Black|White|Cobalt Violet|Aourora White
+XPRS-00439,Samsung Galaxy S25 Ultra 5G - 12GB Ram - 512GB (Local Warranty),Samsung,73900.00,EGP,10,Mobile & Smart Phones,Titanium Black|Gray|Titanium Silverblue|Titanium White Silver
+XPRS-00440,Honor Magic V3 12GB RAM 512GB + Honor Watch +Honor buds Free Gifts,Honor,74509.00,EGP,10,Mobile & Smart Phones,Black|Green
+XPRS-00441,Samsung Galaxy S26 Ultra 5G 12GB Ram 512GB,Samsung,80660.00,EGP,10,Mobile & Smart Phones,Cobalt Violet|Gray|White|Skyline Blue
+XPRS-00442,Samsung Galaxy S25 Ultra 5G - 12GB - 1TB (Official Warranty),Samsung,84999.00,EGP,10,Mobile & Smart Phones,Titanium Black|Gray|Titanium White Silver|Titanium Silverblue
+XPRS-00443,iPhone Air,Apple,92654.00,EGP,10,Mobile & Smart Phones,Aourora White|Black|Air Cloud White|Air Light Gold
+XPRS-00444,hoco Car holder CA79 Ligue magnetic for dashboard,Hoco,148.00,EGP,10,Mobile Phone Car Mounts,Black
+XPRS-00445,Joyroom Suction Cup T-bracket Phone Holder  -Black-JR-OK2,Joyroom,222.00,EGP,10,Mobile Phone Car Mounts,
+XPRS-00446,hoco Car holder CA74 Universe magnetic for air outlet - Black,Hoco,258.00,EGP,10,Mobile Phone Car Mounts,
+XPRS-00447,hoco Car holder CA74 Universe magnetic for air outlet - Silver,Hoco,294.00,EGP,10,Mobile Phone Car Mounts,
+XPRS-00448,hoco Car holder CA61 Kaile magnetic for dashboard,Hoco,363.00,EGP,10,Mobile Phone Car Mounts,Black
+XPRS-00449,Ugreen Magnetic Car Phone Holder - Black,Ugreen,769.00,EGP,10,Mobile Phone Car Mounts,Black
+XPRS-00450,Ugreen Waterfall Magnetic Phone Holder - Black,Ugreen,844.00,EGP,10,Mobile Phone Car Mounts,Black
+XPRS-00451,Usams Iphone 16 Plus with Cover - Clear,Usams,233.00,EGP,10,Mobile Phone Cases,Clear
+XPRS-00452,Usams Iphone 16 Pro Cover - Clear,Usams,233.00,EGP,10,Mobile Phone Cases,Clear
+XPRS-00453,Usams Iphone 16 Plus with Magsafe Cover - Clear,Usams,527.00,EGP,10,Mobile Phone Cases,Clear
+XPRS-00454,Unionaire Built-In Stainless Smart Mix Gas Oven With Grill 70 L 60 cm with Cooling Fan Full Safety BO66G-119-TSF-OS-AL,Unionaire,12699.00,EGP,10,Ovens,Silver
+XPRS-00455,Purity Built-in Electric Oven 60 CM 76 L with Fan OPT60EED,Purity,17999.00,EGP,10,Ovens,Silver
+XPRS-00456,Purity Built-in Electric Oven 60 cm 76 L OPT601EED,Purity,19399.00,EGP,10,Ovens,Black
+XPRS-00457,"Purity Built-in Oven with Grill 65 Liter 2000 Watt , Black - OPT602GG",Purity,19999.00,EGP,10,Ovens,Black
+XPRS-00458,"purity Full Electric Digital Built-in Oven, 60 cm, 88 Liters, Black - KPT609EEDB 88L",Purity,20499.00,EGP,10,Ovens,Black
+XPRS-00459,Purity Built-in Gas Oven 60 CM Digital with Grill OPT601GGD,Purity,20499.00,EGP,10,Ovens,Black
+XPRS-00460,Purity  Full Electric Digital Built-in Oven 60 CM - OPT60PRO DARK EED,Purity,21499.00,EGP,10,Ovens,Black
+XPRS-00461,Purity Built-in Gas Oven 60 CM Digital with Fan OPT602GGD,Purity,21499.00,EGP,10,Ovens,Black
+XPRS-00462,Purity Built-in Gas Oven With Electric Grill 60 CM 65 L With Fan OPT60GED,Purity,22099.00,EGP,10,Ovens,Black
+XPRS-00463,Purity Built-in Full Electric Digital Touch Oven 60 CM 88 L KPT6020EETDB FALL T88L,Purity,22499.00,EGP,10,Ovens,Black
+XPRS-00464,Bosch Built-In Electric Oven 60 cm With Grill Digital Stainless Steel - HBJ534ES0,Bosch,25099.00,EGP,10,Ovens,Black
+XPRS-00465,Purity Built-in Gas Oven 60 CM Digital Dark inox FR PRO,Purity,28699.00,EGP,10,Ovens,Black
+XPRS-00466,Bosch Serie 6 - Built-in Oven - Electric Oven 60cm - Black - Stainless Steel - Fan - HBJ558YS0G,Bosch,29299.00,EGP,10,Ovens,Black
+XPRS-00467,Purity Built-in Gas Oven With Gas Grill 90 CM Full Safety With Fan KPD907GGD GBL,Purity,29699.00,EGP,10,Ovens,Black
+XPRS-00468,Purity Digital Gas Built-in Oven With Gas Grill 90 CM KPT908GGD-X,Purity,31699.00,EGP,10,Ovens,Black
+XPRS-00469,Purity Gas Built-in Oven With Gas Grill 90 CM OPT903GG,Purity,32799.00,EGP,10,Ovens,Black
+XPRS-00470,Purity Digital Gas Built-in Oven With Gas Grill 90 CM OPT901GXD,Purity,36899.00,EGP,10,Ovens,Silver
+XPRS-00471,Purity Digital Gas Built-in Oven With Gas Grill 90 CM OPT902GGD,Purity,37499.00,EGP,10,Ovens,Black
+XPRS-00472,Purity Digital Gas Built-in Oven With Gas Grill 90 CM - OPT901DARK GXD,Purity,40699.00,EGP,10,Ovens,Black
+XPRS-00473,Purity Built-in Electric Oven 60 CM 76 L Digital Black GPT SMART 60CM,Purity,54399.00,EGP,10,Ovens,Black
+XPRS-00474,Oraimo BoomPop Lite Headphones ENC Over-Ear - Black,Oraimo,1049.00,EGP,10,Over-Ear Headphones,Black
+XPRS-00475,Philips 2000 Series On-Ear Wireless Headphones - Black,Philips,1759.00,EGP,10,Over-Ear Headphones,Black
+XPRS-00476,CardoO Headphone - Black,CardoO,2334.00,EGP,10,Over-Ear Headphones,Black
+XPRS-00477,Ugreen HiTune Max5c Headphones - White,Ugreen,3986.00,EGP,10,Over-Ear Headphones,
+XPRS-00478,Ugreen HiTune Max5c wireless Headphones ANC - Black,ugreen,5220.00,EGP,10,Over-Ear Headphones,Black
+XPRS-00479,RODE NTH-100 Headphones,RODE,12000.00,EGP,10,Over-Ear Headphones,Silver
+XPRS-00480,Tornado Halogen Heater Waal Mounted 2000 Watt Black - THH-2000W,Tornado,1199.00,EGP,10,Patio Heaters,Black
+XPRS-00481,Unionaire Air Cooler 90L With Ice Pack Silver – UA90MS,Unionaire,5199.00,EGP,10,Portable Evaporative Coolers,Gray
+XPRS-00482,hoco Wall charger “C106A Leisure” EU cable set Type-c 1m,Hoco,211.00,EGP,10,Power Adapters & Chargers,White
+XPRS-00483,hoco Wall charger “C106A Leisure” EU cable set Lightning 1m,Hoco,211.00,EGP,10,Power Adapters & Chargers,White
+XPRS-00484,hoco Car charger Z36 Leader dual port set with cable Micro-usb - White,Hoco,233.00,EGP,10,Power Adapters & Chargers,
+XPRS-00485,MultiFunction Series 60W 4- in-1 Fast Charging RS47T,Recci,275.00,EGP,10,Power Adapters & Chargers,Black
+XPRS-00486,Oraimo PowerCube 20W PD 3.0 USB C Wall Charger Kit with Type-C to Lightning Cable - White,Oraimo,290.00,EGP,10,Power Adapters & Chargers,White
+XPRS-00487,CardoO Car Charger 48W Dual Ports,CardoO,409.00,EGP,10,Power Adapters & Chargers,Black|Gray
+XPRS-00488,Recci RC106E 25W Charger,Recci,420.00,EGP,10,Power Adapters & Chargers,White
+XPRS-00489,Recci RQ08 – 15W+15W Multi-Functional FM Car Charger,Recci,455.00,EGP,10,Power Adapters & Chargers,Black
+XPRS-00490,Recci RC70E 30W Dual Port Charger (USB-A + USB-C),Recci,475.00,EGP,10,Power Adapters & Chargers,White
+XPRS-00491,Recci Adapter 45W RC132E,Recci,630.00,EGP,10,Power Adapters & Chargers,White
+XPRS-00492,CardoO Car Charger 60W Dual Ports,CardoO,642.00,EGP,10,Power Adapters & Chargers,Black|Gray
+XPRS-00493,Recci RCC-N22 – Journey PD 65W Car Charger,Recci,715.00,EGP,10,Power Adapters & Chargers,Blue
+XPRS-00494,Recci RC108E 45W GaN Fast Charger Set,Recci,785.00,EGP,10,Power Adapters & Chargers,White
+XPRS-00495,Cellularline 25W USB-C Charger with Cable - Black,Cellularline,843.00,EGP,10,Power Adapters & Chargers,Black
+XPRS-00496,CardoO GaN Charger 35w,CardoO,936.00,EGP,10,Power Adapters & Chargers,Black|White
+XPRS-00497,Ugreen Nexode 30W USB-C PD GaN Fast Wall Charger with Cable - Black,Ugreen,1288.00,EGP,10,Power Adapters & Chargers,Black
+XPRS-00498,Recci GaN 65W Fast Charge Desktop Charger RC37,Recci,1400.00,EGP,10,Power Adapters & Chargers,Black
+XPRS-00499,Ugreen Nexode  RG 3-Port Gan Fast Charger  65w -CD361-Black,Ugreen,1758.00,EGP,10,Power Adapters & Chargers,
+XPRS-00500,Maxco 67w GaN Fast Charger - White,Maxco,1759.00,EGP,10,Power Adapters & Chargers,White
+XPRS-00501,Apple 20W USB-C Power Adapter,Apple,1790.00,EGP,10,Power Adapters & Chargers,White
+XPRS-00502,Recci RC41 100W GaN Smart Charger,Recci,1850.00,EGP,10,Power Adapters & Chargers,Black
+XPRS-00503,Ugreen Nexode  RG 3-Port Gan Fast Charger  65w (CD361)- Rose,Ugreen,2344.00,EGP,10,Power Adapters & Chargers,
+XPRS-00504,Maxco MW13 Wireless Charger Magnetic 3 In 1 - Black,Maxco,2740.00,EGP,10,Power Adapters & Chargers,Black
+XPRS-00505,CardoO GaN Charger 100w,CardoO,3282.00,EGP,10,Power Adapters & Chargers,White|Black
+XPRS-00506,Maxco MW11 Geometry Series 3 In 1 Wireless - Gray,Maxco,4692.00,EGP,10,Power Adapters & Chargers,Gray
+XPRS-00507,Momax Q.Clock 2 Digital Clock With Wireless Charger - White,momax,5862.00,EGP,10,Power Adapters & Chargers,
+XPRS-00508,Ugreen Nexode 300w 5-Port PD GaN Charger - Black,Ugreen,8737.00,EGP,10,Power Adapters & Chargers,Black
+XPRS-00509,hoco Power bank J100 High-ranking 10000mAh,Hoco,439.00,EGP,10,Power Banks,Gray|Black
+XPRS-00510,"Oraimo 10,000mAh Power Bank 15W Toast 15 Flash (OPB-1100) Black",Oraimo,549.00,EGP,10,Power Banks,Black
+XPRS-00511,"E-train Power Bank 10,000 Mah, Dual Input & Output Total power 10.5W - Black",Etrain,620.00,EGP,10,Power Banks,
+XPRS-00512,hoco Power bank J102 Cool figure PD20W + QC3.0 10000mAh,Hoco,674.00,EGP,10,Power Banks,Gray|Black
+XPRS-00513,Choetech 5000mAh Mini Power Bank USB-C - Black,Choetech,703.00,EGP,10,Power Banks,Black
+XPRS-00514,Choetech 5000mAh Mini Power Bank Lightning - Black,Choetech,760.00,EGP,10,Power Banks,Black
+XPRS-00515,RPB-P67 High-Power 10000mAh Fast Charging Power Bank,Recci,815.00,EGP,10,Power Banks,Black
+XPRS-00516,WiWU Speedy Series Power Bank 10000 mAh,wiwu,818.00,EGP,10,Power Banks,Black|White
+XPRS-00517,Recci RPB-N17C 20000mAh Ultra-Thin Power Bank – Dual USB Output,Recci,875.00,EGP,10,Power Banks,Black
+XPRS-00518,Cellularline Power Bank Essence 10000 mAh - Black,Cellularline,928.00,EGP,10,Power Banks,Black
+XPRS-00519,Choetech 10000mAh power Bank PD 22.5W - Black,Choetech,936.00,EGP,10,Power Banks,Black
+XPRS-00520,"L'avvento Power Bank 10,000 mAh, 22.5W, LCD indicator - Black",L'avvento,937.00,EGP,10,Power Banks,
+XPRS-00521,RAVPower PD Pioneer 10000 mAh 15W 3-Port PowerBank - Black,RAVPower,993.00,EGP,10,Power Banks,
+XPRS-00522,hoco Power bank J102A Cool figure PD20W + QC3.0 20000mAh,Hoco,1026.00,EGP,10,Power Banks,Gray|Black
+XPRS-00523,CardoO Power Bank 5000mAh X2 Built-In Cable,CardoO,1099.00,EGP,10,Power Banks,Black|Silver|Desert Gold
+XPRS-00524,Recci 22.5W PD 20W Fast Charging 20000 mAh Power Bank RPB-P68,Recci,1105.00,EGP,10,Power Banks,Black
+XPRS-00525,WiWU Trunk Series Power Bank 5000 mAh,wiwu,1169.00,EGP,10,Power Banks,Gray|Navy Blue
+XPRS-00526,Cellularline Power Bank Essence 20000 mAh - Black,Cellularline,1171.00,EGP,10,Power Banks,Black
+XPRS-00527,Cellularline Power Bank Essence Turbo 10000 mAh - Black,Cellularline,1279.00,EGP,10,Power Banks,Black
+XPRS-00528,hoco Power bank J100A High-ranking 20000mAh - Black,Hoco,1288.00,EGP,10,Power Banks,Black
+XPRS-00529,Recci RPB-P19 10000mAh Power Bank - Off White,Recci,1345.00,EGP,10,Power Banks,
+XPRS-00530,Recci Power Bank RPB-P75 30000 mAh,Recci,1385.00,EGP,10,Power Banks,Black
+XPRS-00531,RECCI RPB-W38 10000mAh,Recci,1385.00,EGP,10,Power Banks,Black|White
+XPRS-00532,CardoO Power Bank 10000mAh X2 Built-In Cables,CardoO,1399.00,EGP,10,Power Banks,Black|Silver|Desert Gold
+XPRS-00533,Devia Extreme Speed Series 22.5W Magnetic Wireless Power Bank 10000mAh S28 - Ivory,Devia,1406.00,EGP,10,Power Banks,
+XPRS-00534,Devia Extreme Speed Series 22.5W Magnetic Wireless Power Bank 10000mAh S28 - Deep Gray,Devia,1406.00,EGP,10,Power Banks,
+XPRS-00535,Cellularline Power Bank Essence Turbo 20000 mAh - Black,Cellularline,1605.00,EGP,10,Power Banks,Black
+XPRS-00536,"l'avvento (MP658) Power Bank 20,000 mAh 22.5W LCD indicator - Black",L'avvento,1640.00,EGP,10,Power Banks,
+XPRS-00537,Recci RPB - W27 Galaxy series 3-in-1 10000mAh,Recci,1645.00,EGP,10,Power Banks,Black|Air Light Gold
+XPRS-00538,"Anker Nano Power Bank 5,000 mAH 22.5W Built-In USB-C Connector - Black | A1653H11",Anker,1699.00,EGP,10,Power Banks,Black
+XPRS-00539,VEGER SnapCam 5000mAh Wireless Charging Power Bank with Bluetooth Camera Controller - Black,veger,2699.00,EGP,10,Power Banks,Black
+XPRS-00540,Maxco Crystal Series Magnetic 10000 mAh Fast charing Power Bank,Maxco,2740.00,EGP,10,Power Banks,Ice Blue|Cyan
+XPRS-00541,VEGER MagCore 3-in-1 Magnetic Wireless 10000mAh PD 22.5W Fast Charging Power Bank - Black,veger,2999.00,EGP,10,Power Banks,Black
+XPRS-00542,"Anker Power Bank 20,000mAH 87W Built-In USB-C Cable - Black | A1383H11",Anker,3048.00,EGP,10,Power Banks,Black
+XPRS-00543,Maxco MP28 Generation Magnetic 5000 mAh Fast charing Power Bank - Titanium,Maxco,3223.00,EGP,10,Power Banks,Gray
+XPRS-00544,"l'avvento (MP655) Power Bank 24,000 mAh 100W Input & Output LCD indicator - Gray",L'avvento,3282.00,EGP,10,Power Banks,
+XPRS-00545,VEGER MagMulti 3-in-1 Wireless MagSafe Power Bank 10000mAh 15W with USB-A Port and USB-C Port - Black,veger,3449.00,EGP,10,Power Banks,Black
+XPRS-00546,VEGER X5 6-in-1 5000mAh WalletTrack Power Bank with Find My - Black,veger,3999.00,EGP,10,Power Banks,Black
+XPRS-00547,Maxco future Magnetic Two-Way Quick Charge 5000 mAh Power Bank,Maxco,4103.00,EGP,10,Power Banks,Black|Gray|Red
+XPRS-00548,Lanex LP35 Power Bank 20000 mAh 65w Dual Built In Cable - Black,Lanex,4296.00,EGP,10,Power Banks,
+XPRS-00549,Maxco Excellence Series Magnetic fast Charging 10000 mAh Power Bank,Maxco,4692.00,EGP,10,Power Banks,Black|White
+XPRS-00550,VEGER Tank Boost 56000mAh 130W Camping Power Bank - Black,veger,14990.00,EGP,10,Power Banks,Black
+XPRS-00551,Purity Classic Hood 60cm – 450 m³/h – PTSLIM-X-60CM,Purity,4599.00,EGP,10,Range Hoods,
+XPRS-00552,Purity Classic Hood 60cm – 450 m³/h – PTSLIM-BL-60CM,Purity,4799.00,EGP,10,Range Hoods,
+XPRS-00553,Purity PT Slim X 90cm Built-In Kitchen Hood – 3 Speed – Silver,Purity,4899.00,EGP,10,Range Hoods,
+XPRS-00554,Purity Classic Hood 90cm – 450 m³/h – PTSLIM-X-90CM,Purity,4999.00,EGP,10,Range Hoods,
+XPRS-00555,Purity Classic Hood 90cm – 450 m³/h – PTSLIM-BL-90CM,Purity,5099.00,EGP,10,Range Hoods,
+XPRS-00556,Purity Hood 60cm – 650 m³/h – Black HIDDEN60BL,Purity,5699.00,EGP,10,Range Hoods,
+XPRS-00557,Purity Cooker Hood 60cm – 650 m³/h – Black ETO X 60,Purity,5999.00,EGP,10,Range Hoods,
+XPRS-00558,Purity Classic Hood 90cm – 450 m³/h – PTSLIMX-PLUS-90CM,Purity,5999.00,EGP,10,Range Hoods,
+XPRS-00559,Purity Classic Hood 60cm – 450 m³/h – PTSLIM-PLUS-BL-60CM,Purity,5999.00,EGP,10,Range Hoods,
+XPRS-00560,Purity Cooker Hood 60cm – 650 m³/h – Black ETO BL 60,Purity,6199.00,EGP,10,Range Hoods,
+XPRS-00561,Purity PANSY X Pyramid Hood 90cm – 650 m³/h – LED Lighting,Purity,6199.00,EGP,10,Range Hoods,
+XPRS-00562,Purity T-Shape Hood 60cm – 850 m³/h – FLATO X 60cm,Purity,6599.00,EGP,10,Range Hoods,
+XPRS-00563,Purity PANSY BL Pyramid Hood 90cm – 650 m³/h – LED Lighting,Purity,6799.00,EGP,10,Range Hoods,
+XPRS-00564,Purity Chimney Hood 90cm – 850 m³/h – Silver PANSY Pro X 90,Purity,7099.00,EGP,10,Range Hoods,
+XPRS-00565,Purity Kitchen Hood 60cm – 650 m³/h – FLATO-60-BL,Purity,7599.00,EGP,10,Range Hoods,
+XPRS-00566,Purity T-Shape Hood 90cm – 850 m³/h – FLATO X 90cm,Purity,7599.00,EGP,10,Range Hoods,
+XPRS-00567,Purity Chimney Hood 90cm – 1000 m³/h – Silver PANSY Plus 90,Purity,7999.00,EGP,10,Range Hoods,
+XPRS-00568,Purity Kitchen Hood 90cm – 650 m³/h – FLATO-90-BL,Purity,8099.00,EGP,10,Range Hoods,
+XPRS-00569,Purity Cooker Hood 60cm – 1000 m³/h – Black ETO Pro Plus X 60,Purity,8299.00,EGP,10,Range Hoods,
+XPRS-00570,Purity Built-In Hood 60cm – 850 m³/h – Black FLATO-PRO-60,Purity,8599.00,EGP,10,Range Hoods,
+XPRS-00571,Purity Cooker Hood 60cm – 1000 m³/h – Black ETO Pro Plus BL 60,Purity,8599.00,EGP,10,Range Hoods,
+XPRS-00572,Purity Chimney Hood 90cm – 1000 m³/h – PANSY Pro Plus BL 90,Purity,8999.00,EGP,10,Range Hoods,
+XPRS-00573,Purity Built-In Hood 60cm – 850 m³/h – Black FLATO-PRO-BL-60,Purity,9299.00,EGP,10,Range Hoods,
+XPRS-00574,Purity Cooker Hood 90cm – 1000 m³/h – Black ETO Pro Plus X 90,Purity,9299.00,EGP,10,Range Hoods,
+XPRS-00575,Purity Cooker Hood 90cm – 1000 m³/h – Black ETO Pro Plus BL 90,Purity,9799.00,EGP,10,Range Hoods,
+XPRS-00576,Purity Kitchen Suction Hood 90 CM – 750 m³/h – Inox CAPPEINOX90,Purity,10799.00,EGP,10,Range Hoods,
+XPRS-00577,"Bosch Kitchen Hood 90cm, 380 m³/h, Stainless Steel - DWP94CC50T",Bosch,12099.00,EGP,10,Range Hoods,Silver
+XPRS-00578,"Purity Chimney Hood 60cm, 1000 m³/h – ROSE-PLUS-BL-60CM",Purity,12299.00,EGP,10,Range Hoods,
+XPRS-00579,Purity T-Shape Hood 90cm – 1000 m³/h – FLATO Pro Plus Black,Purity,12999.00,EGP,10,Range Hoods,
+XPRS-00580,"Purity Chimney Hood 90cm, 1000 m³/h – ROSE-PLUS-BL-90CM",Purity,13299.00,EGP,10,Range Hoods,
+XPRS-00581,"Purity Kitchen Hood 60cm, 1000 m³/h – CURVNICEBL60",Purity,14299.00,EGP,10,Range Hoods,
+XPRS-00582,"Purity Kitchen Hood 90cm, 1000 m³/h – CURVNICEBL90",Purity,15299.00,EGP,10,Range Hoods,
+XPRS-00583,Purity Built-In Hood 60cm – 1000 m³/h – TS Pro Plus X,Purity,15399.00,EGP,10,Range Hoods,
+XPRS-00584,Purity Built-In Hood 60cm – 1000 m³/h – TBL Pro Plus BL,Purity,15999.00,EGP,10,Range Hoods,
+XPRS-00585,Purity Built-In Hood 60cm – 1000 m³/h – TSD Dark Inox Pro Plus,Purity,16399.00,EGP,10,Range Hoods,
+XPRS-00586,Purity Built-In Hood 90cm – 1000 m³/h – TS Pro Plus X,Purity,16399.00,EGP,10,Range Hoods,
+XPRS-00587,Purity GL Pro Plus Pyramid Kitchen Hood 90 CM – 1000 m³/h – Black,Purity,16999.00,EGP,10,Range Hoods,
+XPRS-00588,Purity Built-In Hood 90cm – 1000 m³/h – TBL Pro Plus BL,Purity,16999.00,EGP,10,Range Hoods,
+XPRS-00589,Purity Built-In Hood 90cm – 1000 m³/h – TSD Dark Inox Pro Plus,Purity,17399.00,EGP,10,Range Hoods,
+XPRS-00590,Bosch Kitchen Hood 90cm 700 m³/h Touch Control 2 Speeds Glass Black - DWK96PJ60T,Bosch,22999.00,EGP,10,Range Hoods,
+XPRS-00591,"Bosch Kitchen Hood 90cm, 700 m³/h, Glass Black - DWK97PJ60T",Bosch,26199.00,EGP,10,Range Hoods,Black
+XPRS-00592,"Purity Built-In Kitchen Hood 90cm, 1000 m³/h – Diamond Bl Island Black",Purity,28699.00,EGP,10,Range Hoods,
+XPRS-00593,"Bosch Gas Cooker, 5 Burners, 90 cm, Stainless Steel (HGV1F8Y52S)",Bosch,18899.00,EGP,10,Ranges,Black|Silver
+XPRS-00594,"Purity Built-In Gas Oven With Grill, 60 CM , 67 Liter, Silver - OPT601GG",Purity,19399.00,EGP,10,Ranges,Silver
+XPRS-00595,"Bosch Gas Cooker 5 Burners, 90 * 60 cm, Enamel Stainless Steel (HGV1F8Y50S)",Bosch,20999.00,EGP,10,Ranges,Silver|Black
+XPRS-00596,"Unionaire O Signature 3 Gas Cooker – 5 Burners, 90×60 cm, 2 Fans and Full Safety, C69SS-GC-383-ICPSF-1CH-OS3-2W-AL",Unionaire,23099.00,EGP,10,Ranges,Black
+XPRS-00597,La Germania Freestanding Cooker 90 x 60 cm 5 Gas Burners with Fan - 9M10G4A1X4AWW,LA GERMANIA,26499.00,EGP,10,Ranges,Black
+XPRS-00598,"LA GERMANIA Gas Cooker 5 Burners 90 x 60cm, Stainless (9D10GUB1X4AWW)",LA GERMANIA,26499.00,EGP,10,Ranges,Silver
+XPRS-00599,"Purity Gas Cooker 5 Burners 60*90cm, Cast Iron (FRGG9050)",Purity,30699.00,EGP,10,Ranges,White|Black
+XPRS-00600,"Bosch Series 8, Gas cooker, 5 Burners, 90 cm, Stainless steel – HIZ5G7W51S",Bosch,33499.00,EGP,10,Ranges,Silver
+XPRS-00601,Tornado Refrigerator 355 Liter Inverter No Frost - RF-40FTV,Tornado,23399.00,EGP,10,Refrigerators,Black|Silver|Gray
+XPRS-00602,Sharp Refrigerator No Frost 396 Liter Stainless - SJ-48C(ST),Sharp,28399.00,EGP,10,Refrigerators,Silver
+XPRS-00603,Bosch NoFrost Combi Refrigerator 330 Liters - Digital Touchscreen - Silver - KGN39NLEE8,Bosch,29499.00,EGP,10,Refrigerators,
+XPRS-00604,Tornado No Frost Refrigerator 450L | RF‑580TV,Tornado,30199.00,EGP,10,Refrigerators,Black|Gray
+XPRS-00605,"Sharp Refrigerator 385 Liter, No Frost, Inverter, Digital Touch Screen, Stainless - SJ-PV48G-DST",Sharp,32699.00,EGP,10,Refrigerators,Silver
+XPRS-00606,Sharp Refrigerator Inverter No Frost 450 Liter Black - SJ-GV58A(BK),Sharp,40599.00,EGP,10,Refrigerators,Black
+XPRS-00607,"Bosch, Series 4, free-standing fridge-freezer with freezer at bottom, 483 litres, 186 x 70cm, Brushed steel anti-fingerprint, KGN55VI2E9",Bosch,55499.00,EGP,10,Refrigerators,Silver
+XPRS-00608,Bosch Serie 4 free-standing bottom Freezer Refrigerator- 505 liters - Stainless steel - KGN56CI30U,Bosch,61299.00,EGP,10,Refrigerators,Silver
+XPRS-00609,EZVIZ CB3 Smart Home Battery Camera -White-Black -2K,EZVIZ,3751.00,EGP,10,Security Cameras,
+XPRS-00610,EZVIZ CB8 -2K Smart Home Battery Camera -White -Black -CS-CB8,EZVIZ,6332.00,EGP,10,Security Cameras,
+XPRS-00611,Oraimo Smart Watch 6N OSW-8000N - Black,Oraimo,899.00,EGP,10,Smart Watches,
+XPRS-00612,Oraimo Watch 5 Smart Watch - Light Chrome Black (OSW-805),Oraimo,999.00,EGP,10,Smart Watches,
+XPRS-00613,hoco Smart sports watch Y5 Pro call version - Black,Hoco,1050.00,EGP,10,Smart Watches,
+XPRS-00614,"oraimo Watch 5 Lite 2.01"" HD IP68 Smart Watch (OSW-804)",Oraimo,1171.00,EGP,10,Smart Watches,
+XPRS-00615,Recci RA45 Smartwatch,Recci,1365.00,EGP,10,Smart Watches,Black|Rose Gold|Silver
+XPRS-00616,Mibro Smart Watch C4 - 2.01 Inch TFT - Silvers,Mibro,1649.00,EGP,10,Smart Watches,
+XPRS-00617,Oraimo Smart Watch ER OSW-42 1.43 Inch Amoled IP68 - Black,Oraimo,1650.00,EGP,10,Smart Watches,
+XPRS-00618,Mibro Smart Watch A3 - 1.39 Inch HD - Gold,Mibro,1899.00,EGP,10,Smart Watches,
+XPRS-00619,WiWU Smart Watch SW01 Pro - Black,wiwu,1935.00,EGP,10,Smart Watches,
+XPRS-00620,"HOCO Y11 Smart Watch for Men With 2 Straps, AMOLED Display, 1.5 Inch - Black",Hoco,1999.00,EGP,10,Smart Watches,
+XPRS-00621,Recci Round Screen Smart Watch RA40,Recci,2470.00,EGP,10,Smart Watches,Black|Aurora Gold
+XPRS-00622,KOSPET Orb Smartwatch,KOSPET,2599.00,EGP,10,Smart Watches,Silver|Gray
+XPRS-00623,KOSPET Pulse Smartwatch,KOSPET,2699.00,EGP,10,Smart Watches,Silver|Gray
+XPRS-00624,Recci RA43 Smartwatch – 1.32” AMOLED Stainless Steel Round Display,Recci,2940.00,EGP,10,Smart Watches,Black|Silver
+XPRS-00625,CardoO Watch X Orbit,CardoO,3199.00,EGP,10,Smart Watches,Black|Silver|Desert Gold
+XPRS-00626,CardoO Watch X Apex,CardoO,3199.00,EGP,10,Smart Watches,Black|Silver
+XPRS-00627,Nothing CMF Watch Pro,CMF,3518.00,EGP,10,Smart Watches,Black|Silver
+XPRS-00628,Mibro Smart Watch GS Active - 1.3 Inch Amoled,Mibro,3549.00,EGP,10,Smart Watches,Aurora Gold|Gray
+XPRS-00629,Mibro Smart Watch Lite 3 Pro - 1.32 Inch Amoled,Mibro,3715.00,EGP,10,Smart Watches,Rose Gold|Green
+XPRS-00630,KOSPET TANK S2 Smartwatch,KOSPET,3999.00,EGP,10,Smart Watches,Light Green|Silver|Pink
+XPRS-00631,Nothing CMF Watch Pro 2,CMF,4338.00,EGP,10,Smart Watches,Blue|Gray|Orange 12 F|Black
+XPRS-00632,KOSPET TANK T3 ULTRA 2 Smartwatch,KOSPET,4888.00,EGP,10,Smart Watches,Black|Silver
+XPRS-00633,Mibro Smart Watch GS Explorer,Mibro,4899.00,EGP,10,Smart Watches,White|Black
+XPRS-00634,KOSPET TANK M3 ULTRA Special Edition Dual Band Smartwatch,KOSPET,5299.00,EGP,10,Smart Watches,Black|Silver
+XPRS-00635,KOSPET TANK T3 ULTRA 2 Smartwatch Special Edition,KOSPET,5444.00,EGP,10,Smart Watches,Black|Silver
+XPRS-00636,KOSPET MAGIC P10 Smartwatch,KOSPET,6666.00,EGP,10,Smart Watches,Black|Silver
+XPRS-00637,KOSPET MAGIC R10 Smartwatch,KOSPET,6777.00,EGP,10,Smart Watches,Black|Silver
+XPRS-00638,KOSPET TANK M4 Smartwatch,KOSPET,8888.00,EGP,10,Smart Watches,
+XPRS-00639,KOSPET TANK T4 Smartwatch,KOSPET,9090.00,EGP,10,Smart Watches,Black|Silver
+XPRS-00640,Unionaire Electric Heater 50 Liters Digital With Enamelled Pot White EWH50-C310-V-P-3,Unionaire,3599.00,EGP,10,Space Heaters,White
+XPRS-00641,Xiaomi Fan Heater 2000W - White,Xiaomi,4399.00,EGP,10,Space Heaters,White
+XPRS-00642,Purity Electric Radiator Black 50*110-750W,Purity,13799.00,EGP,10,Space Heaters,Silver|Gold|Black
+XPRS-00643,Oraimo SpaceBox Wireless Speaker 8W FM OBS-382 - Space grey,Oraimo,949.00,EGP,10,Speakers,Black|Gray
+XPRS-00644,E-train LED Cylindrical Rechargeable Portable Speaker 10W - Black,E-train,995.00,EGP,10,Speakers,
+XPRS-00645,Recci Portable Wireless Speaker RSK-W43,Recci,1025.00,EGP,10,Speakers,Green|Purple
+XPRS-00646,Philips 1000 WIireless Speaker - Black,Philips,1055.00,EGP,10,Speakers,Black
+XPRS-00647,L'avvento Waterproof Speaker IPX7 SP31B 5.5W 1500mAh TWS Voice Assistance - Black,L'avvento,1171.00,EGP,10,Speakers,
+XPRS-00648,l'avvento LED Speaker IPX6 SP315 5W*2 3000mAh USB TF AUX Rope Handle - Black,L'avvento,1171.00,EGP,10,Speakers,
+XPRS-00649,hoco Wireless speaker HC7 Pleasant sports portable loudspeaker,Hoco,1407.00,EGP,10,Speakers,Green|Silver|Gray
+XPRS-00650,hoco Wireless speaker HC4 Bella sports portable loudspeaker,Hoco,1407.00,EGP,10,Speakers,Blue|Yellow|Red|Black
+XPRS-00651,hoco Wireless speaker HC10 Sonar sports portable loudspeaker,Hoco,1526.00,EGP,10,Speakers,Green|Red
+XPRS-00652,E-train LED Cube Rechargeable Portable Speaker 10W - Black,E-train,1875.00,EGP,10,Speakers,
+XPRS-00653,Glow Wireless Protable Speaker RGB - Black,Cellularline,2879.00,EGP,10,Speakers,Black
+XPRS-00654,JBL Go 4,JBL,3056.00,EGP,10,Speakers,Black|Blue|Pink|Purple|Bronze|White|Camouflage
+XPRS-00655,JBL Clip 5,JBL,3975.00,EGP,10,Speakers,Black|Blue|White|Pink|Purple|Red|Camouflage
+XPRS-00656,Momax Intune Plus 20W Portable Wireless Speaker - Black,momax,5862.00,EGP,10,Speakers,
+XPRS-00657,JBL Charge 5 - Black,JBL,7035.00,EGP,10,Speakers,
+XPRS-00658,JBL Flip 7 Portable Bluetooth Speaker,JBL,9095.00,EGP,10,Speakers,Black|Blue|Pink|Camouflage|White
+XPRS-00659,JBL Charge 6 Portable Bluetooth Speaker,JBL,11699.00,EGP,10,Speakers,Black|Blue|Purple|Bronze|White
+XPRS-00660,Anker Rave 3S Speaker - Black,Anker,14999.00,EGP,10,Speakers,
+XPRS-00661,JBL PartyBox Encore 2 - Portable speaker with mic,JBL,26270.00,EGP,10,Speakers,Black|Multicolor|Green
+XPRS-00662,JBL BoomBox 3 - Squad,JBL,29319.00,EGP,10,Speakers,
+XPRS-00663,JBL BoomBox 3 - Black,JBL,29319.00,EGP,10,Speakers,
+XPRS-00664,JBL PartyBox 520 - Portable Wireless Speaker - Black,JBL,44566.00,EGP,10,Speakers,Black
+XPRS-00665,Oraimo Undo 2 Data Cable OCD-C56 2A USB-A to Type-C 2M - Black,Oraimo,118.00,EGP,10,Storage & Data Transfer Cables,
+XPRS-00666,L'avvento USB-C to USB-C Cable Syncing 20V 5A Max 100W 2M - Grey,L'avvento,503.00,EGP,10,Storage & Data Transfer Cables,
+XPRS-00667,l'avvento USB-A to Lightning Cable - Black,L'avvento,667.00,EGP,10,Storage & Data Transfer Cables,
+XPRS-00668,Maxco MS12CC 240W Fast Charging Data Cable - Black,Maxco,778.00,EGP,10,Storage & Data Transfer Cables,
+XPRS-00669,Recci Screen Touch Pen RCS-S10,Recci,265.00,EGP,10,Stylus Pens,White
+XPRS-00670,l'avvento USB-C to USB-C Cable 20V 3A 1M - Silver,L'avvento,174.00,EGP,10,System & Power Cables,
+XPRS-00671,Momax DC16D ZERO USB-C to USB-C 1m Charging Cable - Black,momax,175.00,EGP,10,System & Power Cables,
+XPRS-00672,WIWU cable Wi-C017 USB-C to USB-C 100W - Black,wiwu,219.00,EGP,10,System & Power Cables,Black
+XPRS-00673,WiWU TM01 USB-C to Lightning 1.2M Charging Cable -Black,wiwu,281.00,EGP,10,System & Power Cables,
+XPRS-00674,RAVPower 60W Silicone USB-C to USB-C Cable 1.2M,RAVPower,382.00,EGP,10,System & Power Cables,Black|White
+XPRS-00675,RAVpower 60w Braided USB-C to USB-C Cable - White,RAVPower,466.00,EGP,10,System & Power Cables,
+XPRS-00676,RAVPower USB-C to USB-C Cable 2M - Black,RAVPower,496.00,EGP,10,System & Power Cables,
+XPRS-00677,L'avvento USB-C To Lightning Cable New Woven 1.2M - Blue,L'avvento,642.00,EGP,10,System & Power Cables,
+XPRS-00678,L'avvento USB-C to Lightning Cable syncFast Charge PD 27W 2M - Grey,L'avvento,879.00,EGP,10,System & Power Cables,
+XPRS-00679,Pout EYES15BK Tripod Easel TV Stand 32 to 65 Inch Black,Pout,5511.00,EGP,10,TV & Monitor Mounts,Black
+XPRS-00680,Pout EYES16BK Quadpod Easel TV Stand 49 to 70 Inch Black,Pout,7739.00,EGP,10,TV & Monitor Mounts,Brown|Black
+XPRS-00681,Recci RHO-M09 Holder,Recci,190.00,EGP,10,Tablet Computer Docks & Stands,White
+XPRS-00682,MultiAngle Tablet Stand RHO-M23,Recci,1015.00,EGP,10,Tablet Computer Docks & Stands,Silver|Black
+XPRS-00683,Lenovo Tab One 4G (4GB RAM / 128GB) Luna Grey,Lenovo,5863.00,EGP,10,Tablet Computers,Gray
+XPRS-00684,TCL Tab 11 FE  9465X - 4GB RAM - 128GB - WIFI - Gray,TCL,5990.00,EGP,10,Tablet Computers,Gray
+XPRS-00685,Samsung Galaxy Tab A9 4G 4GB 64GB,Samsung,7500.00,EGP,10,Tablet Computers,Silver
+XPRS-00686,Infinix Xpad 20 4G 6GB 128GB,Infinix,7999.00,EGP,10,Tablet Computers,Red|Green|Purple
+XPRS-00687,Xiaomi Pad SE 8.7 - Wi-Fi Only (6GB RAM / 128GB) Graphite Grey,Xiaomi,8099.00,EGP,10,Tablet Computers,Gray
+XPRS-00688,"Nokia T20 Tablet - 10.4-inch, 64GB, 4GB RAM, Single SIM 4G - Ocean Blue",Nokia,8190.00,EGP,10,Tablet Computers,Navy Blue
+XPRS-00689,TCL Tab 11 Gen 2  9465X5 - 6GB RAM - 256GB - WIFI - Gray,TCL,8888.00,EGP,10,Tablet Computers,Gray
+XPRS-00690,TCL TAB NXTPAPER  9469X  11.5 Inch 8GB 256GB WIFI,TCL,9999.00,EGP,10,Tablet Computers,Gray|Black
+XPRS-00691,"Samsung Galaxy Tab A9, WiFi & SIM Card (8GB RAM / 128GB Storage) Silver",Samsung,10199.00,EGP,10,Tablet Computers,Silver
+XPRS-00692,Honor Pad X9A WIFI (8GB Ram / 128GB) with Flip cover - Color Gray - (Official warranty),Honor,11840.00,EGP,10,Tablet Computers,Gray|Black
+XPRS-00693,Infinix Xpad 20 Pro 8GB Ram 256GB,Infinix,12399.00,EGP,10,Tablet Computers,Blue|Black|Silver
+XPRS-00694,Xiaomi Redmi pad 2 (8GB Ram / 256GB) (Local Warranty) Dual SIM 4G,Xiaomi,12769.00,EGP,10,Tablet Computers,Black|Mint Green
+XPRS-00695,Honor Pad X9a LTE (8GB Ram / 128GB) with Flip cover - Color Gray (Official Warranty),Honor,13155.00,EGP,10,Tablet Computers,Gray
+XPRS-00696,TCL TAB NXTPAPER 14 WIFI 8GB 256GB,TCL,16990.00,EGP,10,Tablet Computers,Black|Gray
+XPRS-00697,"Lenovo Tab P12 (12.7"") - 128GB, 4GB RAM, Wi-Fi, Storm Grey - with Pen",Lenovo,16999.00,EGP,10,Tablet Computers,Black
+XPRS-00698,Lenovo Tab K11 LTE (8GB Ram / 128GB) (TB330XU),Lenovo,17499.00,EGP,10,Tablet Computers,Gray
+XPRS-00699,Lenovo Idea Tab pro Wi-Fi 8GB 256GB Luna Gray Matte Edition With Tab Pen Plus,Lenovo,18243.00,EGP,10,Tablet Computers,Black
+XPRS-00700,HONOR Pad 10 12.1-inch WIFI Only - 8GB Ram - 256G8 Storge + keyboard Grey,Honor,18640.00,EGP,10,Tablet Computers,Gray
+XPRS-00701,Lenovo Tab Plus Wi-Fi (8GB Ram / 256GB) Luna Gray with Sleeve Case Silver,Lenovo,18762.00,EGP,10,Tablet Computers,Gray|Silver
+XPRS-00702,Lenovo IdeaPad Duet 3 (8GB RAM / 128GB SSD) Intel N100 Processor - 11.5 inches Touchscreen - Windows 11 + Keyboard and Pen,Lenovo,19937.00,EGP,10,Tablet Computers,Blue
+XPRS-00703,Lenovo Idea Tab pro Wi-Fi (8GB Ram/ 128GB) Luna Gray with Tab Pen Plus,Lenovo,21111.00,EGP,10,Tablet Computers,Black
+XPRS-00704,"Infinix Xpad GT - 8GB Ram, 256GB",Infinix,23190.00,EGP,10,Tablet Computers,Gray
+XPRS-00705,Huawei MatePad 12X 12GB 256GB With Keyboard - WIFI Paper Matte Edition and Pen,HUAWEI,25799.00,EGP,10,Tablet Computers,White
+XPRS-00706,Lenovo Legion Tab Gen 3 Wi-Fi (12GB RAM / 256GB) - 8.8 Inches 165Hz Display (Model: TB321FU),Lenovo,29999.00,EGP,10,Tablet Computers,Black
+XPRS-00707,Lenovo YOGA TAB PLUS WI-FI (TB520FU) 16GB RAM/ 256GB Storage,Lenovo,43277.00,EGP,10,Tablet Computers,Teal
+XPRS-00708,L'avvento (MP533) Flexible And heave duty - Metal MFI Type-C to Lightning Cable 1M - Black,L'avvento,703.00,EGP,10,Telephone Cables,
+XPRS-00709,"Hoho 32 Inch Smart TV , HD LED - HS3206",HOHO,7599.00,EGP,10,Televisions,Black
+XPRS-00710,"Hisense 32"" FHD Smart LED TV - 32A4K",Hisense,8699.00,EGP,10,Televisions,Black
+XPRS-00711,"Hisense 32"" FHD Smart LED TV - 32A4Q",Hisense,8799.00,EGP,10,Televisions,Black
+XPRS-00712,"Samsung 32"" Smart TV , HD LED Built-In Receiver - 32H5000",Samsung,10499.00,EGP,10,Televisions,Black
+XPRS-00713,HOHO Smart Television 43 inch HO4306S1,HOHO,12599.00,EGP,10,Televisions,Black
+XPRS-00714,"Hisense 43"" FHD Smart LED TV - 43A4K",Hisense,13499.00,EGP,10,Televisions,Black
+XPRS-00715,"Hisense 43"" FHD Smart LED TV - 43A4Q",Hisense,13699.00,EGP,10,Televisions,Black
+XPRS-00716,"Samsung  43"" Full HD Smart LED TV  Built-in Receiver - 43F6000",Samsung,16999.00,EGP,10,Televisions,Black
+XPRS-00717,"Hisense 50"" 4K Smart TV UHD - 50A6N",Hisense,17899.00,EGP,10,Televisions,Black
+XPRS-00718,"Samsung  43"" Crystal UHD U8000F 4K Smart TV, Built-in Receiver - 43U8000F",Samsung,19799.00,EGP,10,Televisions,Black
+XPRS-00719,"Hisense 55"" 4K Smart TV UHD - 55A6N",Hisense,20599.00,EGP,10,Televisions,Black
+XPRS-00720,"Hisense 58"" 4K Smart TV UHD - 58A6N",Hisense,21099.00,EGP,10,Televisions,Black
+XPRS-00721,"Samsung  50"" Crystal UHD U8000F 4K Smart TV, Built-in Receiver - 50U8000F",Samsung,21999.00,EGP,10,Televisions,Black
+XPRS-00722,"LG 50 Inch Smart TV , 4K UHD LED Built-In Receiver With Magic remote - 50UA851COLA",LG,22999.00,EGP,10,Televisions,Black
+XPRS-00723,"Hisense 55"" 4K Smart TV QLED 60Hz - 55Q6N",Hisense,23299.00,EGP,10,Televisions,Black
+XPRS-00724,Samsung 55” QLED Ultra HD Certified HDR1000 4K Smart Built-in Receiver  - 55Q6F,Samsung,24899.00,EGP,10,Televisions,Black
+XPRS-00725,"Samsung  55"" Crystal UHD U8000F 4K Smart TV, Built-in Receiver - 55U8000F",Samsung,25299.00,EGP,10,Televisions,Black
+XPRS-00726,"Hisense 55"" 4K Smart TV QLED 60Hz - 55Q7N",Hisense,25999.00,EGP,10,Televisions,Black
+XPRS-00727,"Hisense 65"" 4K Smart TV UHD - 65A6N",Hisense,26999.00,EGP,10,Televisions,Black
+XPRS-00728,"Hisense 65"" 4K Smart TV QLED 60Hz - 65Q6N",Hisense,28099.00,EGP,10,Televisions,Black
+XPRS-00729,"Samsung  65"" Crystal UHD U8000F 4K Smart TV, Built-in Receiver - 65U8000F",Samsung,30799.00,EGP,10,Televisions,Black
+XPRS-00730,LG 65 inch UHD4K Smart TV - 65UA84006LB,LG,30999.00,EGP,10,Televisions,
+XPRS-00731,"Hisense 65"" 4K Smart TV QLED 60Hz - 65Q7N",Hisense,32399.00,EGP,10,Televisions,Black
+XPRS-00732,"Hisense 75"" 4K Smart TV UHD - 75A6N",Hisense,34599.00,EGP,10,Televisions,Black
+XPRS-00733,"Samsung 55"" Neo QLED QN70F 4K Vision AI Smart TV - 55QN70F",Samsung,37299.00,EGP,10,Televisions,Black
+XPRS-00734,"Samsung  75"" Crystal UHD U8000F 4K Smart TV, Built-in Receiver - 75U8000F",Samsung,41699.00,EGP,10,Televisions,Black
+XPRS-00735,"Samsung 55"" The Frame QLED 4K Art Mode Smart - 55LS03F",Samsung,43899.00,EGP,10,Televisions,Multicolor
+XPRS-00736,"Hisense 75"" 4K Smart TV QLED 60Hz - 75Q7N",Hisense,53999.00,EGP,10,Televisions,Black
+XPRS-00737,"Samsung 55"" 4K UHD Smart TV OLED with Built In Receiver - QA55S90D",Samsung,54899.00,EGP,10,Televisions,Black
+XPRS-00738,"Hisense 85"" 4K Smart TV UHD - 85A6N",Hisense,56199.00,EGP,10,Televisions,Black
+XPRS-00739,"Samsung 55"" OLED Smart TV - 55S85F",Samsung,59299.00,EGP,10,Televisions,Black
+XPRS-00740,"Samsung  85"" Crystal UHD U8000F 4K Smart TV Built-in Receiver - 85U8000F",Samsung,71299.00,EGP,10,Televisions,Black
+XPRS-00741,"Samsung 55"" Neo QLED QN90F 4K Vision AI Smart TV - 55QN90F",Samsung,72599.00,EGP,10,Televisions,Black
+XPRS-00742,"Samsung 65"" Neo QLED 8K Smart TV - 65QN800C",Samsung,74299.00,EGP,10,Televisions,Black
+XPRS-00743,"Samsung 65"" Neo QLED 8K  Smart TV - 65QN700C",Samsung,85499.00,EGP,10,Televisions,Black
+XPRS-00744,"Samsung 65"" OLED 4K Smart TV 144Hz - 65S95C",Samsung,93899.00,EGP,10,Televisions,Black
+XPRS-00745,"Samsung 65"" OLED 4K Smart TV 144Hz - 65S95C + Stand Bundle",Samsung,110499.00,EGP,10,Televisions,Black
+XPRS-00746,"Xiaomi Mijia Thermos, 1.8 Liter, White - MJBWH01PL",Xiaomi,2199.00,EGP,10,Thermoses,White
+XPRS-00747,"Philips 1000 Series Toaster, 2 Slices, 650 Watt, Black - HD2510/91",Philips,2499.00,EGP,10,Toasters,Black
+XPRS-00748,i-Aicon HP LaserJet Pro MFP M125/127fn/ fw laserJet Pro M225dn/dw/rdn/M201dw/n,i-Aicon,457.00,EGP,10,Toner & Inkjet Cartridges,Black
+XPRS-00749,i-Aicon HP P1100/P1102/M1130/1210MFP/M1132/1002/ 1003/1004/1005/1006/1009/1130/1132/1134/1136/11 37/1138/1139,i-Aicon,457.00,EGP,10,Toner & Inkjet Cartridges,Black
+XPRS-00750,i-Aicon HP LaserJet Pro P2030/P2035/2050/P2055 /P2055dn/P2055x/400 M401a/d/n/400 M425dn/dw,i-Aicon,568.00,EGP,10,Toner & Inkjet Cartridges,Black
+XPRS-00751,i-Aicon HP LaserJet pro M402n/dn/dw MFP M426 fdn/fdw,i-Aicon,580.00,EGP,10,Toner & Inkjet Cartridges,Black
+XPRS-00752,i-Aicon HP Laser 106a/106r/106w Laser MFP 135a/w Laser MFP 137fnw,i-Aicon,627.00,EGP,10,Toner & Inkjet Cartridges,Black
+XPRS-00753,i-Aicon HP Laser 107a/107r/107w Laser MFP 135a/w Laser MFP 137fnw,i-Aicon,627.00,EGP,10,Toner & Inkjet Cartridges,
+XPRS-00754,i-Aicon HP LaserJet Pro M404n/404dn/404dw HP LaserJet Pro MFP M428dw/M428fdn/M428fdw,i-Aicon,908.00,EGP,10,Toner & Inkjet Cartridges,Black
+XPRS-00755,King Smith WalkingPad G1 Foldable Treadmill - Black,King Smith,34600.00,EGP,10,Treadmills,Black
+XPRS-00756,Recci 5 in 1 Converter Rh06,Recci,755.00,EGP,10,USB & FireWire Hubs,Silver
+XPRS-00757,L'avvento Hub US015 Type-C 5in 1 - 3 USB 3.0 HDMI 4K 87W PD - Grey,L'avvento,1169.00,EGP,10,USB & FireWire Hubs,
+XPRS-00758,L'avvento Hub US016 Type-C 5in 1 - 2 USB 2.0 HDMI 4K RJ45 87W PD - Grey,L'avvento,1407.00,EGP,10,USB & FireWire Hubs,
+XPRS-00759,L'avvento Hub US017 Type-C 8in 1 - 2 USB 3.0 HDMI 4K VGA TF Card RJ45 87W PD,L'avvento,2168.00,EGP,10,USB & FireWire Hubs,
+XPRS-00760,Recci Convert Type-C to Usb RDS-A16C,Recci,170.00,EGP,10,USB Adapters,Gray
+XPRS-00761,L'avvento Converter From USB-C Male To USB-C Female And AUX Female 30cm - Black,L'avvento,466.00,EGP,10,USB Adapters,
+XPRS-00762,"Oraimo Data Cable USB-A To Lightning 2.4 A, 1M- White",Oraimo,74.00,EGP,10,USB Cables,White
+XPRS-00763,Recci RS06M Smart Data Cable,Recci,80.00,EGP,10,USB Cables,White|Silver
+XPRS-00764,Usams USB-A to Type-C Fast Charging Data Cable 1M - White,Usams,92.00,EGP,10,USB Cables,White
+XPRS-00765,Usams USB-A to Type-C Fast Charging Data Cable 1M - Black,USAMS,92.00,EGP,10,USB Cables,Black
+XPRS-00766,Choetech USB-A to USB-C Cable 1M - Black,Choetech,103.00,EGP,10,USB Cables,
+XPRS-00767,l'avvento Cable MP035 Metal USB to Micro USB - Silver,L'avvento,104.00,EGP,10,USB Cables,
+XPRS-00768,"Oraimo FastLine 2 Data Cable Lighting To USB-C, 2.4A, 1M - Black",Oraimo,105.00,EGP,10,USB Cables,Black
+XPRS-00769,Oraimo Undo 2 Data Cable OCD-M56 2A USB-A to Micro 2M - Black,Oraimo,109.00,EGP,10,USB Cables,
+XPRS-00770,Recci RTC-P05L Silicone Cable USB to Lightning,Recci,125.00,EGP,10,USB Cables,White
+XPRS-00771,Recci RTC-P05M Shark Cable 4.5A USB to Micro-USB 1.5m,Recci,125.00,EGP,10,USB Cables,White
+XPRS-00772,Recci RTC-P05C USB to Type-C Cable,Recci,140.00,EGP,10,USB Cables,
+XPRS-00773,Usams Type-C to Type-C 60W Fast Charging Data Cable 1M - Black,Usams,140.00,EGP,10,USB Cables,Black|Striped
+XPRS-00774,hoco Cable USB to Lightning X1 charging data sync 2m,Hoco,158.00,EGP,10,USB Cables,White
+XPRS-00775,Recci RCS-D120 Fast Wind 3 in 1 USB Cable - 1.2M - Black,Recci,160.00,EGP,10,USB Cables,
+XPRS-00776,hoco Cable USB to Micro-USB X59 Victory charging data sync 2m - Blue,Hoco,162.00,EGP,10,USB Cables,Blue
+XPRS-00777,hoco Cable USB to Micro-USB X59 Victory charging data sync 2m - Black,Hoco,162.00,EGP,10,USB Cables,Black
+XPRS-00778,Usams 60W Strip Data Cable Type-C to Type-C 2M - Black,USAMS,162.00,EGP,10,USB Cables,Black
+XPRS-00779,Recci RS48CL – 30W Fast Charging Data Cable,Recci,175.00,EGP,10,USB Cables,Black
+XPRS-00780,Recci RTC-P05CL 1.5m Type-C to Lightning PD 30W Fast Charging,Recci,175.00,EGP,10,USB Cables,
+XPRS-00781,Choetech USB-C to USB-C Cable 1M - Black,Choetech,180.00,EGP,10,USB Cables,Black
+XPRS-00782,hoco Cable USB to Type-c X59 Victory charging data sync 2m - Blue,Hoco,189.00,EGP,10,USB Cables,Blue
+XPRS-00783,Recci RS22C – 100W Super Fast Charging USB to Type-C Cable,Recci,230.00,EGP,10,USB Cables,White
+XPRS-00784,hoco Cable Type-C to iP X107 Favor PD 27W fast charge 1m,Hoco,233.00,EGP,10,USB Cables,White|Silver|Gray
+XPRS-00785,CardoO Cable USB-A to Lightning 1.2M,CardoO,233.00,EGP,10,USB Cables,White|Black
+XPRS-00786,CardoO Cable USB-A to USB-C 1.2M - Black,CardoO,233.00,EGP,10,USB Cables,
+XPRS-00787,CardoO Cable USB-A to Micro USB 1.2M - Black,CardoO,233.00,EGP,10,USB Cables,
+XPRS-00788,L'avvento USB-C To USB-C Cable Durable Metal Design 20V 3A 2M - Silver,L'avvento,233.00,EGP,10,USB Cables,
+XPRS-00789,X59 Victory PD charging data cable iP(L=2M) - Black,Hoco,246.00,EGP,10,USB Cables,Red|Black|Multicolor
+XPRS-00790,X59 Victory PD charging data cable iP(L=2M) - Red,Hoco,246.00,EGP,10,USB Cables,Red|Black|Multicolor
+XPRS-00791,Recci Data Cable Voyage Series Type-C to Type-C PD 240W RS18CC,Recci,260.00,EGP,10,USB Cables,Black|Gray
+XPRS-00792,Recci Lamp Display Cable Type-C to Type-C PD 240W RS42CC,Recci,260.00,EGP,10,USB Cables,Black
+XPRS-00793,Recci Lamp Display 150Cm Cable Type-C to Usb 100W RS42C,Recci,260.00,EGP,10,USB Cables,Black
+XPRS-00794,Cellularline USB-C to USB-C Cable 1.2M - White,Cellularline,263.00,EGP,10,USB Cables,White
+XPRS-00795,Wiwu PT04 Platinum Cable Type-C To Lightning 1.2M - Black,wiwu,263.00,EGP,10,USB Cables,
+XPRS-00796,CardoO Cable USB-C to USB-C 100W 1.2M,CardoO,290.00,EGP,10,USB Cables,Black|White
+XPRS-00797,CardoO Cable USB-C to Lightning 1.2M,CardoO,290.00,EGP,10,USB Cables,White|Black
+XPRS-00798,CardoO Cable USB-A to Lightning 2M - Black,CardoO,290.00,EGP,10,USB Cables,
+XPRS-00799,CardoO Cable USB-A to USB-C 2M - Black,CardoO,290.00,EGP,10,USB Cables,
+XPRS-00800,CardoO Cable USB-A to Micro USB 2M - Black,CardoO,290.00,EGP,10,USB Cables,
+XPRS-00801,L'avvento USB-A to USB-C Super Charge Cable 1.5M - White,L'avvento,290.00,EGP,10,USB Cables,
+XPRS-00802,CardoO Cable USB-C to USB-C 100W 2M,CardoO,351.00,EGP,10,USB Cables,Black|White
+XPRS-00803,CardoO Cable USB-C to Lightning 2M - Black,CardoO,351.00,EGP,10,USB Cables,
+XPRS-00804,RAVPower 60W USB-C to USB-C Cable 1M - Black,RAVPower,351.00,EGP,10,USB Cables,Black
+XPRS-00805,Recci RS32CL Type-C to Lightning Cable (PD 27W),Recci,365.00,EGP,10,USB Cables,Aurora Gold|Black
+XPRS-00806,Recci RS32CC USB-C Cable PD 27W With Watt Display,Recci,365.00,EGP,10,USB Cables,Black
+XPRS-00807,Ugreen USB-C Cable Aluminum Case with Braided 1M - Black,Ugreen,373.00,EGP,10,USB Cables,Black
+XPRS-00808,Usams Type-C to Type-C 100W PD Fast Charging & Data Cable 2M - Black,USAMS,387.00,EGP,10,USB Cables,Black
+XPRS-00809,Cellularline TETRA FORCE USB-C to USB-C Cable 1.2M - Black,Cellularline,432.00,EGP,10,USB Cables,Black
+XPRS-00810,RAVPower 60W Nylon Braid USB-C to USB-C Cable 1.2M - Black,RAVPower,466.00,EGP,10,USB Cables,Black
+XPRS-00811,Anker USB-C to USB-C Cable 6ft 240W - Black | A82E2H12,Anker,525.00,EGP,10,USB Cables,Black
+XPRS-00812,Cellularline USB-A to Lightning 1.2M - White,Cellularline,637.00,EGP,10,USB Cables,White
+XPRS-00813,Choetech USB-A to lightning 1.2M - White,Choetech,656.00,EGP,10,USB Cables,White
+XPRS-00814,Cellularline USB-C to Lightning Cable 1.2M - White,Cellularline,760.00,EGP,10,USB Cables,White
+XPRS-00815,l'avvento CV152 4in1 Type-C 4K HUB Converter - Grey,L'avvento,936.00,EGP,10,USB Cables,
+XPRS-00816,Choetech USB-C to Lightning Cable 1.2M - Black,Choetech,1055.00,EGP,10,USB Cables,Black
+XPRS-00817,Anker USB-C to Lightning Cable 3ft - Black | A82B2011,Anker,1084.00,EGP,10,USB Cables,Black
+XPRS-00818,Cellularline Bag Cable USB-C to Lightning - White and Blue,Cellularline,1781.00,EGP,10,USB Cables,Blue|White
+XPRS-00819,Anker Prime Thunderbolt 4 Cable 3ft 240W - Black | A84N0011,Anker,2280.00,EGP,10,USB Cables,
+XPRS-00820,"Recharged by Infinity EV Charger Cable type 2 to GPT (5-meter Cable 32A 22kW, Chinese Standard AC)",Infinity,11629.00,EGP,10,USB Cables,Black|White
+XPRS-00821,"Recharged by Infinity EV Charger Cable type 2 to type 2 (5-meter Cable 32A 22kW, EV European standard Plug)",Infinity,11629.00,EGP,10,USB Cables,Black|White
+XPRS-00822,Bosch Handheld Rechargeable Vacuum Cleaner 54 Watt - Black White - BCS711XXL,Bosch,18899.00,EGP,10,Upright Vacuums,Black|White
+XPRS-00823,"Samsung Canister Bagless Vacuum Cleaner, 1800 Watt, Blue - VCC4540S36/EGT",Samsung,5799.00,EGP,10,Vacuums,Blue
+XPRS-00824,"Samsung Canister Vacuum Cleaner, 2000 Watt, Blue - VC20M2510WB/GT",Samsung,5899.00,EGP,10,Vacuums,Blue
+XPRS-00825,Xiaomi Mi Robot Vacuum  Wet and Dry Vacuum Cleaner E5-EU,Xiaomi,7399.00,EGP,10,Vacuums,Silk White|Black
+XPRS-00826,"Bosch Series 4 Bagged Vacuum Cleaner, 2000 Watt, Black and Gold - BGL38GOLD",Bosch,8299.00,EGP,10,Vacuums,Black|Gold
+XPRS-00827,Xiaomi Vacuum Cleaner P30 - White,Xiaomi,8699.00,EGP,10,Vacuums,White
+XPRS-00828,"Bosch Series 4 Bagless Vacuum Cleaner, 2000 Watt, White- BGS21WHYG",Bosch,10699.00,EGP,10,Vacuums,White
+XPRS-00829,Xiaomi Robot Vacuum Cleaner Power 35W 4000Pa Powerful Suction - E10-EU,Xiaomi,10799.00,EGP,10,Vacuums,White
+XPRS-00830,"Bosch Bagless Vacuum Cleaner, 2200 W Bagless - BGS412234",Bosch,10999.00,EGP,10,Vacuums,Black
+XPRS-00831,"Bosch Wet And Dry Vacuum Cleaner With Hepa Filter, 2000 Watt, Light Blue And White - BWD420HYG",Bosch,14999.00,EGP,10,Vacuums,White
+XPRS-00832,Bosch Wet & Dry Vacuum Cleaner 5L 2100W - BWD421PRO,Bosch,15999.00,EGP,10,Vacuums,White|Black
+XPRS-00833,Xiaomi Robot Vacuum X20 Plus ( X20PLUS-WH ) -  White,Xiaomi,32399.00,EGP,10,Vacuums,White
+XPRS-00834,Oculus Meta Quest 3S All in One VR Gaming Headset (256GB) - White,Meta,33074.00,EGP,10,Video Game Consoles,
+XPRS-00835,Sony PlayStation 5 Slim Digital Edition Fortnite - 1 Year Warranty,Sony,36999.00,EGP,10,Video Game Consoles,
+XPRS-00836,Sony PlayStation 5 Slim digital Edition 1 Year Warranty  + FC 26,Sony,37499.00,EGP,10,Video Game Consoles,
+XPRS-00837,Sony PlayStation 5 Slim Standard Edition Fortnite 1Y Warranty,Sony,40999.00,EGP,10,Video Game Consoles,Starlight
+XPRS-00838,"Sony PlayStation 5 Pro, 2TB SSD, With Wireless Controller - White",Sony,55119.00,EGP,10,Video Game Consoles,White
+XPRS-00839,"PlayNation Box, The First Portable PlayStation 5 in the World",PlayNation,63333.00,EGP,10,Video Game Consoles,Black
+XPRS-00840,FIFA 16 (Preowned),PlayStation,58.00,EGP,10,Video Game Software,
+XPRS-00841,Infamous: Second Son (PS4),PlayStation,233.00,EGP,10,Video Game Software,
+XPRS-00842,Drive club,PlayStation,236.00,EGP,10,Video Game Software,
+XPRS-00843,Hitman 2 ( Preowned ),PlayStation,292.00,EGP,10,Video Game Software,
+XPRS-00844,Driveclub VR (Preowned),PlayStation,328.00,EGP,10,Video Game Software,
+XPRS-00845,Horizon zero dawn,PlayStation,350.00,EGP,10,Video Game Software,
+XPRS-00846,One Piece Burning Blood (Preowned),PlayStation,398.00,EGP,10,Video Game Software,
+XPRS-00847,Battlefield V( Preowned ),PlayStation,410.00,EGP,10,Video Game Software,
+XPRS-00848,Horizon zero dawn complete edition ( Preowned ),PlayStation,416.00,EGP,10,Video Game Software,
+XPRS-00849,Diablo III Ultimate Evil Edition (Preowned),PlayStation,469.00,EGP,10,Video Game Software,
+XPRS-00850,Ark Survival Evolved (Preowned),PlayStation,469.00,EGP,10,Video Game Software,
+XPRS-00851,The Outer Worlds (Preowned),PlayStation,480.00,EGP,10,Video Game Software,
+XPRS-00852,Uncharted 4(Preowned),PlayStation,551.00,EGP,10,Video Game Software,
+XPRS-00853,Star wars battlefront 2,PlayStation,557.00,EGP,10,Video Game Software,
+XPRS-00854,Battlefield 4 (Preowned),PlayStation,557.00,EGP,10,Video Game Software,
+XPRS-00855,Rainbow six siege ( Preowned ),PlayStation,585.00,EGP,10,Video Game Software,
+XPRS-00856,Crash bandicoot trilogy ( Preowned ),PlayStation,585.00,EGP,10,Video Game Software,
+XPRS-00857,One Piece World Seeker (Preowned),PlayStation,633.00,EGP,10,Video Game Software,
+XPRS-00858,Call of duty advanced warfare ( Preowned ),PlayStation,691.00,EGP,10,Video Game Software,
+XPRS-00859,Kingdom Hearts IIl (Preowned),PlayStation,797.00,EGP,10,Video Game Software,
+XPRS-00860,Call of Duty Black Ops Cold War (Preowned),PlayStation,950.00,EGP,10,Video Game Software,
+XPRS-00861,Rayman Legends (Preowned),PlayStation,1032.00,EGP,10,Video Game Software,
+XPRS-00862,Far cry 5,PlayStation,1102.00,EGP,10,Video Game Software,
+XPRS-00863,Spyro Reignited Trilogy (Preowned),PlayStation,1290.00,EGP,10,Video Game Software,
+XPRS-00864,Assassins Creed: Valhalla (PS5),PlayStation,1406.00,EGP,10,Video Game Software,
+XPRS-00865,Gotham Knights - Arabic edition  (PS5),PlayStation,1640.00,EGP,10,Video Game Software,
+XPRS-00866,Assassins Creed: Valhalla - Arabic Edition (PS5),PlayStation,1653.00,EGP,10,Video Game Software,
+XPRS-00867,Dragon Ball Z: Kakarot - PS5,PlayStation,1875.00,EGP,10,Video Game Software,
+XPRS-00868,Crash Team Rumble Deluxe Edition (PS5),PlayStation,1982.00,EGP,10,Video Game Software,
+XPRS-00869,Suicide Squad: Kill The Justice League (PS5),PlayStation,1992.00,EGP,10,Video Game Software,
+XPRS-00870,Marvel's Midnight Suns (PS5),PlayStation,1992.00,EGP,10,Video Game Software,
+XPRS-00871,Minecraft Legends - Deluxe Edition (PS5),PlayStation,2099.00,EGP,10,Video Game Software,
+XPRS-00872,Assassin's Creed: Mirage (PS5),PlayStation,2216.00,EGP,10,Video Game Software,
+XPRS-00873,Call of Duty: Black Ops Cold War (PS5),PlayStation,2287.00,EGP,10,Video Game Software,
+XPRS-00874,Elden Ring (PS5),PlayStation,2579.00,EGP,10,Video Game Software,
+XPRS-00875,Sonic X Shadow Generations (PS5),PlayStation,2813.00,EGP,10,Video Game Software,
+XPRS-00876,Cyberpunk 2077 : Ultimate Edition - PS5,PlayStation,2930.00,EGP,10,Video Game Software,
+XPRS-00877,Disney Epic Mickey: Rebrushed - PS5,PlayStation,3024.00,EGP,10,Video Game Software,
+XPRS-00878,UFC 5 ( PS5 ),PlayStation,3165.00,EGP,10,Video Game Software,
+XPRS-00879,Elden Ring Nightreign (PS5),PlayStation,3165.00,EGP,10,Video Game Software,
+XPRS-00880,WWE 2K25 - Arabic Edition - PS5,PlayStation,3282.00,EGP,10,Video Game Software,
+XPRS-00881,The Last of Us Part II (2) Remastered - PS5,PlayStation,3282.00,EGP,10,Video Game Software,
+XPRS-00882,LEGO Horizon Adventures - Arabic Edition  (PS5),PlayStation,3341.00,EGP,10,Video Game Software,
+XPRS-00883,FC 26 - Arabic Edition (PS5),EA,3650.00,EGP,10,Video Game Software,
+XPRS-00884,God Of War Ragnarok - Arabic Edition (PS5),PlayStation,3694.00,EGP,10,Video Game Software,
+XPRS-00885,Assassin's Creed Shadows - PS5,PlayStation,3986.00,EGP,10,Video Game Software,
+XPRS-00886,Astro Bot (PS5),PlayStation,4103.00,EGP,10,Video Game Software,
+XPRS-00887,Call of Duty: Black Ops 6 (PS5),PlayStation,4338.00,EGP,10,Video Game Software,
+XPRS-00888,hoco Wall charger C81A Asombroso EU plug set with cable 1m,Hoco,175.00,EGP,10,Wall Chargers,White
+XPRS-00889,Usams 20W PD Fast Travel Charger - White,Usams,338.00,EGP,10,Wall Chargers,White
+XPRS-00890,WiWU Quick 20W USB-C PD Fast charger- White,wiwu,351.00,EGP,10,Wall Chargers,
+XPRS-00891,Anker Zolo Wall Charger 20W Black | A2699L11,Anker,389.00,EGP,10,Wall Chargers,
+XPRS-00892,Wiwu Wall Charger with 20W PD Single Port USB Wall Plug - White,wiwu,409.00,EGP,10,Wall Chargers,White
+XPRS-00893,hoco Wall charger “N24 Victorious” PD20W EU,Hoco,410.00,EGP,10,Wall Chargers,
+XPRS-00894,Wiwu Jello 20w PD GaN Fast Charger - Blue,wiwu,448.00,EGP,10,Wall Chargers,
+XPRS-00895,Usams 25W GaN Mini Fast Charger - Black,Usams,466.00,EGP,10,Wall Chargers,Black
+XPRS-00896,L'avvento Home Charger PD 30W - White,L'avvento,467.00,EGP,10,Wall Chargers,
+XPRS-00897,RAVPower PD Pioneer 20W wall Charger,RAVPower,518.00,EGP,10,Wall Chargers,Black|White
+XPRS-00898,hoco Wall charger N24 Victorious PD20W EU set with cable Type-c to Lightning 1m,Hoco,520.00,EGP,10,Wall Chargers,
+XPRS-00899,Anker Zolo Wall Charger 30W Black | A2698L11,Anker,549.00,EGP,10,Wall Chargers,
+XPRS-00900,Cellularline 20W USB-C Charger - White,Cellularline,550.00,EGP,10,Wall Chargers,White
+XPRS-00901,Ugreen 20W USB-C PD Fast Wall Charger EU - White,ugreen,558.00,EGP,10,Wall Chargers,White
+XPRS-00902,Ugreen 20W USB-C PD Fast Wall Charger EU - Black,Ugreen,558.00,EGP,10,Wall Chargers,Black
+XPRS-00903,hoco Wall charger N19 Rigorous PD25W EU set with cable Type-c to Type-c 1m,Hoco,585.00,EGP,10,Wall Chargers,White|Black
+XPRS-00904,hoco Wall charger N32 Glory PD30W EU cable set Type-c to Type-c 1m,Hoco,585.00,EGP,10,Wall Chargers,
+XPRS-00905,Wiwu Jello 33w PD GaN Fast Charger - Blue,wiwu,615.00,EGP,10,Wall Chargers,
+XPRS-00906,Cellularline 25W USB-C Charger - Black,Cellularline,738.00,EGP,10,Wall Chargers,Black
+XPRS-00907,hoco Wall charger CS22A Value PD30W EU cable set C to C 1m,Hoco,809.00,EGP,10,Wall Chargers,
+XPRS-00908,RAVPower PD Pioneer 30W wall Charger - White,RAVPower,818.00,EGP,10,Wall Chargers,
+XPRS-00909,Ugreen USB-C GaN Fast Charger 20W - Black,Ugreen,835.00,EGP,10,Wall Chargers,Black
+XPRS-00910,Maxco 30w GaN Fast Charger,Maxco,879.00,EGP,10,Wall Chargers,Skyline Blue|Pink
+XPRS-00911,Wall charger C127A Intelligent PD45W EU cable set,Hoco,1055.00,EGP,10,Wall Chargers,Gray|Black
+XPRS-00912,Hoco Wall charger CS63A Bright PD65W EU - Black,Hoco,1112.00,EGP,10,Wall Chargers,Black
+XPRS-00913,Ugreen Nexode 65W 3-Port PD GaN Fast Charger EU - White,Ugreen,1161.00,EGP,10,Wall Chargers,White
+XPRS-00914,Ugreen Nexode 35W 2-Port Gan Fast Charger EU - Black,Ugreen,1266.00,EGP,10,Wall Chargers,Black
+XPRS-00915,Ugreen Nexode 30W USB-C PD GaN Fast Wall Charger EU - Black,ugreen,1288.00,EGP,10,Wall Chargers,Black
+XPRS-00916,Ugreen Nexode 65W 3-Port PD GaN Fast Charger - Black,Ugreen,1772.00,EGP,10,Wall Chargers,Black
+XPRS-00917,CardoO GaN Charger 65w,CardoO,1873.00,EGP,10,Wall Chargers,White|Black
+XPRS-00918,Ugreen Nexode 4-Port PD Gan Fast Charger 100w (CD226) White,Ugreen,2344.00,EGP,10,Wall Chargers,
+XPRS-00919,Ugreen Nexode Pro 100W 3-Port GaN Mini Fast Charger - Black,Ugreen,3883.00,EGP,10,Wall Chargers,Black
+XPRS-00920,Tornado Wall Fan 16 Inch 4 Blades Black - TWF-16,Tornado,1899.00,EGP,10,Wall Mount Fans,Black
+XPRS-00921,Tornado Washing Machine 8 Kg Pump Dark Silver - TWT-TLN08LDS,Tornado,10599.00,EGP,10,Washing Machines,Black
+XPRS-00922,"Unionaire Top Load Washing Machine 13KG, Full Automatic, Black – UW130TPL-A2MBK",Unionaire,13699.00,EGP,10,Washing Machines,Black
+XPRS-00923,Samsung Top Load Washing Machine 11KG - Grey (WA11DG5410BDAS),Samsung,15199.00,EGP,10,Washing Machines,Gray
+XPRS-00924,"Tornado Top Automatic Washing Machine 11 Kg, Silver - WE-TLN11RSL",Tornado,16199.00,EGP,10,Washing Machines,Silver
+XPRS-00925,Tornado Washing Machine 12 Kg Pump Dark Silver - TWT-TLN12LDS,Tornado,17099.00,EGP,10,Washing Machines,Black
+XPRS-00926,"Samsung Digital Top Automatic Washing Machine 14KG, Silver – WA14F5S4UWAUAS",Samsung,20599.00,EGP,10,Washing Machines,Silver
+XPRS-00927,"HOOVER Washing Machine Fully Automatic 8 Kg, Black ( H3WS383TAC3B-ELA )",HOOVER,21999.00,EGP,10,Washing Machines,Black
+XPRS-00928,"Bosch Series 2, washing machine, frontloader, 8 kg, 1200 rpm, Silver inox - WLZ2421SEG6",Bosch,22999.00,EGP,10,Washing Machines,
+XPRS-00929,Samsung Front Load Washing Machine 8KG - Full Automatic - Inox (WW80T4040CX1AS),Samsung,24899.00,EGP,10,Washing Machines,Silver|Geometric
+XPRS-00930,"Samsung Front Load Washing Machine 8KG, Inverter Motor, Full Automatic, Black – WW80CGC0EDABAS",Samsung,26799.00,EGP,10,Washing Machines,Black
+XPRS-00931,"Samsung Front Load Washing Machine 9KG, Full Automatic, Silver – WW90T4040CX1AS",Samsung,28099.00,EGP,10,Washing Machines,Silver|Black
+XPRS-00932,Samsung Front Load Washing Machine 9KG - Black Caviar (WW90CGC0EDABAS),Samsung,28699.00,EGP,10,Washing Machines,Black
+XPRS-00933,Bosch Washing Machine 9kg 1400 rpm Serie 4 Silver - WGA244ZREG,Bosch,29299.00,EGP,10,Washing Machines,Silver
+XPRS-00934,Thomson Instant Electric 7KW Temperature Display INS7-WH,Thomson,5899.00,EGP,10,Water Heaters,White
+XPRS-00935,Tornado Gas Water Heater 10 Litre Digital For Natural Gas Silver - GHM-C10BNE-S,Tornado,6199.00,EGP,10,Water Heaters,Silver
+XPRS-00936,Cemsan Digital Instant heater 12 KW - White,Cemsan,12899.00,EGP,10,Water Heaters,White
+XPRS-00937,Cemsan Digital Instant heater 21 KW - White,Cemsan,23499.00,EGP,10,Water Heaters,White
+XPRS-00938,Cemsan Digital Instant heater 24KW - White,Cemsan,24599.00,EGP,10,Water Heaters,White
+XPRS-00939,Thomson Gas Water Heater 16 Liter Digital - White,Thomson,29499.00,EGP,10,Water Heaters,White
+XPRS-00940,Thomson Gas Water Heater 20 Liters Digital - Light Grey,Thomson,31999.00,EGP,10,Water Heaters,Gray
+XPRS-00941,Thomson Gas Water Heater 20 Liters Digital - Dark Grey,Thomson,31999.00,EGP,10,Water Heaters,Gray
+XPRS-00942,hoco Wireless charger CW26 Powerful 15W tabletop charging dock,Hoco,783.00,EGP,10,Wireless Chargers,
+XPRS-00943,hoco Wireless charger CW28 Original series 15W magnetic,Hoco,1096.00,EGP,10,Wireless Chargers,White|Black
+XPRS-00944,Recci RPB-W37 5000mAh Magnetic Wireless,Recci,1260.00,EGP,10,Wireless Chargers,Black|Silver
+XPRS-00945,Recci 5 in 1 Charging Wireless Speaker RCW-51,Recci,1820.00,EGP,10,Wireless Chargers,Black|White
+XPRS-00946,Recci 3 in 1 Magnetic Wireless Charger RCW-48,Recci,1835.00,EGP,10,Wireless Chargers,White|Black
+XPRS-00947,Momax Q.Mag 15w Dual Magnetic Wireless Charger Stand - Black,momax,2929.00,EGP,10,Wireless Chargers,
+XPRS-00948,Momax Q2.Mag 3-in-1 Foldable Qi2 15W Magnetic Wireless Charging Stand  - Titanium,momax,7621.00,EGP,10,Wireless Chargers,
+XPRS-00949,L'avvento Wireless Presenter Remote - Grey,L'avvento,1759.00,EGP,10,Wireless Presenters,

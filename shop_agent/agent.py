@@ -12,7 +12,7 @@ Run it:
 from google.adk.agents.llm_agent import Agent
 from google.adk.tools.tool_context import ToolContext
 
-from .data import PRODUCTS, ORDERS, POLICIES, FAQS, BRANCHES
+from .data import PRODUCTS, ORDERS, POLICIES, FAQS, BRANCHES, INSTALLMENT_APPS
 
 
 # --- Tools -------------------------------------------------------------------
@@ -20,20 +20,20 @@ from .data import PRODUCTS, ORDERS, POLICIES, FAQS, BRANCHES
 # sees, so write them like you are explaining the tool to the model.
 
 def search_products(query: str) -> dict:
-    """Search the product catalog by name or category.
+    """Search the product catalog by name, brand, or category.
 
     Args:
-        query: A keyword such as a product name, partial name, or category
-            (for example "headphones", "monitor", or "accessories").
+        query: A keyword such as a product name, brand, partial name, or
+            category (for example "Samsung", "headphones", or "air fryer").
 
     Returns:
         A dict with a list of matching products, each including its SKU,
-        name, price, currency, and how many are in stock.
+        name, brand, price, currency, available colors, and stock.
     """
     q = query.lower().strip()
     matches = []
     for sku, p in PRODUCTS.items():
-        if q in p["name"].lower() or q in p["category"].lower():
+        if q in p["name"].lower() or q in p["category"].lower() or q in p.get("brand", "").lower():
             matches.append({"sku": sku, **p})
 
     if not matches:
@@ -78,8 +78,8 @@ def get_policy(topic: str) -> dict:
     """Return the store policy for a given topic.
 
     Args:
-        topic: One of "returns", "shipping", "warranty", "payment", or
-            "installments".
+        topic: One of "returns", "exchange", "shipping", "pickup", "warranty",
+            "payment", "installments", "discounts", "gaming", or "contact".
 
     Returns:
         The policy text, or the list of valid topics if the topic is unknown.
@@ -220,12 +220,33 @@ def find_store(query: str = "") -> dict:
     q = query.lower().strip()
     matches = []
     for b in BRANCHES:
-        if not q or q in b["name"].lower() or q in b["area"].lower() or q in b["city"].lower():
+        if (not q or q in b["name"].lower() or q in b["area"].lower()
+                or q in b["city"].lower() or q in b.get("notes", "").lower()):
             matches.append(b)
 
     if not matches:
         return {"status": "no_results", "query": query, "branches": []}
     return {"status": "success", "count": len(matches), "branches": matches}
+
+
+def get_installment_apps(query: str = "") -> dict:
+    """List installment-app hotlines, or look up one app's hotline.
+
+    Customers call an app's hotline to open an account and get an available
+    spending limit, then contact XPRS (19857) to complete the order.
+
+    Args:
+        query: An app name to look up (for example "Valu" or "Halan"). Leave it
+            empty to list every installment app and its hotline.
+
+    Returns:
+        A dict with the matching installment apps, each with its name and hotline.
+    """
+    q = query.lower().strip()
+    matches = [a for a in INSTALLMENT_APPS if not q or q in a["app"].lower()]
+    if not matches:
+        return {"status": "no_results", "query": query, "apps": []}
+    return {"status": "success", "count": len(matches), "apps": matches}
 
 
 # --- Agent -------------------------------------------------------------------
@@ -236,21 +257,25 @@ root_agent = Agent(
     description="Customer support agent for XPRS, an electronics retailer in Egypt (powered by Tradeline).",
     instruction=(
         "You are a friendly, concise customer support agent for XPRS, a consumer "
-        "electronics retailer in Egypt (powered by Tradeline). XPRS sells phones, "
-        "laptops, tablets, gaming, TVs, audio and accessories — online and across "
-        "9 stores in Greater Cairo, Giza and the North Coast. All prices are in "
-        "Egyptian Pounds (EGP).\n\n"
+        "electronics retailer in Egypt (powered by Tradeline). XPRS sells a wide "
+        "range of electronics and home appliances — phones, laptops, tablets, "
+        "gaming, TVs, audio, accessories, plus appliances like air conditioners, "
+        "air fryers and refrigerators — online and across 9 stores in Greater "
+        "Cairo, Giza and the North Coast. All prices are in Egyptian Pounds (EGP)."
+        "\n\n"
         "Your job:\n"
         "- Help customers find products, check prices and stock, and compare "
         "options. Use search_products and get_product_details.\n"
         "- Look up order status and tracking with check_order_status when a "
         "customer gives an order ID (they look like 'XPRS-100231').\n"
-        "- Answer questions about returns, shipping, warranty, payment and "
-        "installments using get_policy. Do not invent policy details; if "
-        "get_policy returns an unknown topic, tell the customer the topics you "
-        "can help with.\n"
+        "- Answer questions about returns, exchange, shipping, store pickup, "
+        "warranty, payment, installments, discounts, gaming and contact details "
+        "using get_policy. Do not invent policy details; if get_policy returns an "
+        "unknown topic, tell the customer the topics you can help with.\n"
         "- Tell customers where XPRS stores are, or find the branch nearest to an "
         "area they mention, using find_store.\n"
+        "- For installment app hotlines (so a customer can open an account and "
+        "get a limit), use get_installment_apps.\n"
         "- For general 'how does it work' questions about the shop (ordering, "
         "delivery times, returns, warranty, payment, installments, cancelling, "
         "accounts, stores), use get_faq_response. Pass the customer's question "
@@ -259,10 +284,13 @@ root_agent = Agent(
         "ask a clarifying question or offer to help another way.\n"
         "- When a customer wants to buy something, use add_to_cart and then "
         "confirm what is in their cart and the running total.\n\n"
-        "Highlight XPRS perks when they're relevant: 0% interest installments "
-        "(0% fees, 0% down payment), cash on delivery across Egypt, official "
-        "manufacturer warranty, and fast delivery (about 48 hours). For anything "
-        "you can't resolve, point customers to the hotline 19857 or "
+        "Key facts to use: customers pay by cash or in installments (a Visa "
+        "'Purchases' card from Banque Misr, NBE, CIB or QNB, or apps like Valu, "
+        "Souhoola and Halan; minimum age 21; InstaPay, Vodafone Cash and Meeza "
+        "are not accepted). Delivery is about 7 to 10 working days (10 to 15 for "
+        "large appliances) to all governorates, and store pickup is not "
+        "available. Every purchase has warranty and XPRS offers price-matching. "
+        "For anything you can't resolve, point customers to the hotline 19857 or "
         "sales@myxprs.com.\n\n"
         "Always rely on the tools for facts. If a tool returns 'not_found' or "
         "'no_results', say so plainly and offer to help another way. Never make "
@@ -276,5 +304,6 @@ root_agent = Agent(
         get_faq_response,
         add_to_cart,
         find_store,
+        get_installment_apps,
     ],
 )

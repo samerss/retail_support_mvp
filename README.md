@@ -41,11 +41,12 @@ retail_support_mvp/
     ├── agent.py            # tools + the root_agent  ← the heart of it
     ├── data.py             # loads the CSV sheets into PRODUCTS/ORDERS/POLICIES/FAQS/BRANCHES
     ├── data/               # ← THE DATA SHEETS (edit these to change the store)
-    │   ├── products.csv    #     sku, name, price, currency, in_stock, category
+    │   ├── products.csv    #     sku, name, brand, price, currency, in_stock, category, colors
     │   ├── orders.csv      #     order_id, status, carrier, tracking, eta_days, items, total
     │   ├── policies.csv    #     topic, policy
     │   ├── faqs.csv        #     faq_id, category, question, answer, keywords
-    │   └── branches.csv    #     branch_id, name, area, city, hotline
+    │   ├── branches.csv    #     branch_id, name, area, city, hotline, notes
+    │   └── installment_apps.csv  # app, hotline  (installment-app contact numbers)
     ├── .env                # GOOGLE_API_KEY=... (auto-loaded by ADK)
     └── .adk/               # scratch dir adk web creates (sessions/state) — ignore it
 ```
@@ -71,21 +72,25 @@ data sheets. `data.py` reads them once at startup (Python's stdlib `csv`) and
 builds the in-memory structures the tools use. **To change the store you edit
 the CSVs, not the code:**
 
-- **`products.csv`** → **`PRODUCTS`**, a dict keyed by SKU (`"XPRS-1007"`) →
-  `{name, price, currency, in_stock, category}`.
+- **`products.csv`** → **`PRODUCTS`**, a dict keyed by SKU (`"XPRS-00001"`) →
+  `{name, brand, price, currency, in_stock, category, colors}` — the full real
+  XPRS catalog (~949 products across ~100 categories). The `colors` column is
+  `|`-joined.
 - **`orders.csv`** → **`ORDERS`**, a dict keyed by order id (`"XPRS-100231"`) →
   `{status, carrier, tracking, eta_days, items, total}`. The `items` column
   holds one or more product names joined with `|`; an empty `carrier`/`tracking`
   cell becomes `None`.
 - **`policies.csv`** → **`POLICIES`**, a dict keyed by topic (`returns`,
-  `shipping`, `warranty`, `payment`, `installments`) → the policy text.
-  *Exact-key* lookup.
+  `exchange`, `shipping`, `pickup`, `payment`, `installments`, `discounts`,
+  `gaming`, `warranty`, `contact`) → the policy text. *Exact-key* lookup.
 - **`faqs.csv`** → **`FAQS`**, a **list** of records
   (`faq_id, category, question, answer, keywords`); the `keywords` column is
   `|`-joined. It's a list (not a dict) because you don't look it up by a known
   key — you *search* across all entries by keyword.
 - **`branches.csv`** → **`BRANCHES`**, a list of XPRS store locations
-  (`branch_id, name, area, city, hotline`).
+  (`branch_id, name, area, city, hotline, notes`).
+- **`installment_apps.csv`** → **`INSTALLMENT_APPS`**, a list of installment-app
+  contact numbers (`app, hotline`) — used by the `get_installment_apps` tool.
 
 ### Editing / adding data
 
@@ -100,10 +105,12 @@ data loads automatically. A few rules:
 - `price`/`total` are numbers (e.g. `11499.00`); `in_stock`/`eta_days` are whole
   numbers.
 
-> **Heads-up on accuracy:** products, prices, policies and branches were taken
-> from myxprs.com, but prices and stock change over time — verify before relying
-> on them. The orders are **sample/test data** (real orders aren't public) and
-> stock levels are placeholders.
+> **Heads-up on accuracy:** the product catalog comes from your
+> `XPRS_Catalog_for_Chatbot.csv`; policies and branches were taken from
+> myxprs.com. Prices change over time and **stock levels are placeholders**
+> (every item is set to 10 — the catalog has no stock data) — set real numbers
+> before relying on them. The orders are **sample/test data** (real orders
+> aren't public).
 
 ## `agent.py` — the tools and the agent
 
@@ -138,6 +145,7 @@ model passes human-ish text.
 | `get_faq_response` | `(query)` | keyword-scored FAQ search | fuzzy + confidence gate |
 | `add_to_cart` | `(sku, quantity, tool_context)` | adds to cart **in session state** | writes state |
 | `find_store` | `(query="")` | branches matching an area/mall (all if empty) | fuzzy (loops all) |
+| `get_installment_apps` | `(query="")` | installment-app hotlines (all if empty) | fuzzy (loops all) |
 
 **`add_to_cart` and session state.** It takes a third param,
 `tool_context: ToolContext`, which ADK *injects* automatically — the model never
@@ -187,7 +195,8 @@ root_agent = Agent(
     description="...",                 # used when one agent delegates to another
     instruction="...",                 # the system prompt — persona + routing + hard rules
     tools=[search_products, get_product_details, check_order_status,
-           get_policy, get_faq_response, add_to_cart, find_store],
+           get_policy, get_faq_response, add_to_cart, find_store,
+           get_installment_apps],
 )
 ```
 
@@ -204,13 +213,13 @@ root_agent = Agent(
 For *"How long does delivery take?"*:
 
 1. ADK builds the request: your message + the `instruction` + the
-   **auto-generated JSON schemas** of all 7 tools (from their docstrings/hints) +
+   **auto-generated JSON schemas** of all 8 tools (from their docstrings/hints) +
    conversation history.
 2. Gemini decides: *general shop question → call
    `get_faq_response(query="How long does delivery take?")`.*
 3. ADK runs the Python function; it scores the FAQs, F2 wins, returns
-   `{"status": "success", "answer": "We deliver across Egypt, usually within
-   about 48 hours…", "confidence": 1.0}`.
+   `{"status": "success", "answer": "We ship to all governorates across Egypt…
+   most items arrive in about 7 to 10 working days…", "confidence": 1.0}`.
 4. That dict is fed **back into the model** as the tool result.
 5. The model turns it into a natural reply and sends it to you.
 
@@ -221,11 +230,11 @@ lets you watch steps 2–4 for each message.
 
 **FAQ tool → `success`, relays the answer**
 - "How long does delivery take?"
-- "Can I pay cash on delivery?"
-- "Can I pay in monthly installments?"
-- "What's your return policy?"
-- "Do I need an account to buy something?"
-- "Can I cancel my order after placing it?"
+- "What payment methods do you accept?"
+- "Can I pay in installments?"
+- "What's your return and exchange policy?"
+- "Can I pick up my order from a branch?"
+- "Do you have PlayStation 4?"
 
 **FAQ guardrails**
 - "What's the meaning of life?" → no confident match; the agent should *not*
@@ -234,13 +243,16 @@ lets you watch steps 2–4 for each message.
 - "Do you offer gift wrapping?" → no confident match; should say it doesn't know.
 
 **The other tools**
-- "Show me your laptops" → `search_products` (try "tablet" or "phone" too)
-- "What's the price and stock of XPRS-1007?" → `get_product_details`
-  (Samsung Galaxy S26 Ultra)
+- "Show me Samsung phones" / "Do you have air fryers?" → `search_products`
+  (matches by name, brand, or category)
+- "What's the price of XPRS-00001?" → `get_product_details` (use any SKU from
+  products.csv)
 - "Where's my order XPRS-100231?" → `check_order_status` (shipped, with tracking)
 - "Status of XPRS-99999?" → `not_found`, handled gracefully
-- "Add 2 of XPRS-1002 to my cart" → `add_to_cart` (check the State tab)
+- "Add 2 of XPRS-00001 to my cart" → `add_to_cart` (check the State tab)
+- "What colours does it come in?" → the agent reads the `colors` field
 - "Do you have a store in Madinaty?" / "Nearest branch to Zamalek?" → `find_store`
+- "What's Valu's number?" / "List the installment apps" → `get_installment_apps`
 
 **Boundary probes (tool choice)**
 - "How does shipping work?" vs. "What is your shipping policy?" → both should give
@@ -248,8 +260,8 @@ lets you watch steps 2–4 for each message.
   other `get_policy`.
 - "I want to buy a laptop and also — how long until it arrives?" → a product
   lookup *and* the FAQ in one turn.
-- "Is the Infinix Hot 60 5G in stock?" → seeded as out-of-stock (`in_stock: 0`),
-  so the agent should say it's unavailable rather than offer to add it.
+- "Is XPRS-00001 in stock?" → stock is a placeholder (10 for every item) until
+  you set real numbers in products.csv, so the agent will say it's available.
 
 ## Notes
 

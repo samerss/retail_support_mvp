@@ -5,11 +5,12 @@ Google Sheets — no code changes needed to update the catalog, orders, policies
 FAQs, or store branches. This module loads those CSVs at import time into the
 in-memory structures the agent's tools expect:
 
-    PRODUCTS  dict  sku       -> {name, price, currency, in_stock, category}
-    ORDERS    dict  order_id  -> {status, carrier, tracking, eta_days, items, total}
-    POLICIES  dict  topic     -> policy text
-    FAQS      list  of        {faq_id, category, question, answer, keywords}
-    BRANCHES  list  of        {branch_id, name, area, city, hotline}
+    PRODUCTS         dict  sku       -> {name, brand, price, currency, in_stock, category, colors}
+    ORDERS           dict  order_id  -> {status, carrier, tracking, eta_days, items, total}
+    POLICIES         dict  topic     -> policy text
+    FAQS             list  of        {faq_id, category, question, answer, keywords}
+    BRANCHES         list  of        {branch_id, name, area, city, hotline, notes}
+    INSTALLMENT_APPS list  of        {app, hotline}
 
 Data source: products, prices, policies and branches are real (from myxprs.com).
 Orders are sample/test data and stock levels are placeholders — edit the CSVs in
@@ -41,10 +42,13 @@ def _load_products():
     for row in _read_rows("products.csv"):
         products[row["sku"].strip()] = {
             "name": row["name"],
+            # brand/colors are optional columns (.get) so older sheets still load.
+            "brand": row.get("brand", ""),
             "price": float(row["price"]),
             "currency": row["currency"],
             "in_stock": int(row["in_stock"]),
             "category": row["category"],
+            "colors": _split(row.get("colors", "")),
         }
     return products
 
@@ -94,8 +98,16 @@ def _load_branches():
             "area": row["area"],
             "city": row["city"],
             "hotline": row["hotline"],
+            "notes": row.get("notes", ""),
         })
     return branches
+
+
+def _load_installment_apps():
+    apps = []
+    for row in _read_rows("installment_apps.csv"):
+        apps.append({"app": row["app"], "hotline": row["hotline"]})
+    return apps
 
 
 # Loaded once at import. agent.py imports these names directly, so the tools see
@@ -105,3 +117,4 @@ ORDERS = _load_orders()
 POLICIES = _load_policies()
 FAQS = _load_faqs()
 BRANCHES = _load_branches()
+INSTALLMENT_APPS = _load_installment_apps()
