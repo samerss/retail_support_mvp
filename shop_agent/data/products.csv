@@ -1,0 +1,25 @@
+sku,name,price,currency,in_stock,category
+XPRS-1001,"Oppo A6 4G (4GB Ram, 128GB)",11499.00,EGP,7,smartphones
+XPRS-1002,Infinix Hot 60i (8GB RAM / 256GB),8666.00,EGP,15,smartphones
+XPRS-1003,Xiaomi Redmi Note 15 4G (6GB Ram 128GB),11499.00,EGP,9,smartphones
+XPRS-1004,"Oppo A6 4G (6GB Ram, 128GB)",13999.00,EGP,4,smartphones
+XPRS-1005,Vivo Y21d 4G (6GB Ram - 128GB),9690.00,EGP,12,smartphones
+XPRS-1006,Infinix Hot 60 5G (6GB Ram - 128GB),8444.00,EGP,0,smartphones
+XPRS-1007,Samsung Galaxy S26 Ultra 5G (12GB Ram / 512GB),80499.00,EGP,3,smartphones
+XPRS-1008,Honor X5c Plus 4G (4GB Ram - 128GB),6888.00,EGP,20,smartphones
+XPRS-2001,"Microsoft Surface Laptop 4 15"" (AMD Ryzen 7)",29999.00,EGP,5,laptops
+XPRS-2002,"Asus ROG Strix G16 (AMD Ryzen 9 9955HX, RTX 5060)",87777.00,EGP,6,laptops
+XPRS-2003,Asus Vivobook 15 (Intel Core i5-1335U),32499.00,EGP,10,laptops
+XPRS-2004,"Asus ROG Strix SCAR 18 (RTX 5070 Ti, Ultra 9 275HX)",158888.00,EGP,2,laptops
+XPRS-2005,"ASUS TUF A14 (Ryzen AI 9 HX 370, RTX 4050)",64749.00,EGP,4,laptops
+XPRS-2006,ASUS Zenbook DUO (Ultra 7 155H),98399.00,EGP,0,laptops
+XPRS-2007,MSI Prestige 13 AI Evo (Intel Core Ultra 7 155H),45999.00,EGP,7,laptops
+XPRS-2008,MSI Summit 13 AI Evo X360 (Intel Core Ultra9 288V),89099.00,EGP,3,laptops
+XPRS-3001,Lenovo Tab P11 2nd Generation Tablet,25420.00,EGP,8,tablets
+XPRS-3002,Lenovo Tab Plus Wi-Fi (8GB Ram / 256GB),18763.00,EGP,11,tablets
+XPRS-3003,Lenovo Tab K11 LTE (8GB Ram / 128GB),17499.00,EGP,6,tablets
+XPRS-3004,Xiaomi Pad SE 8.7 - Wi-Fi Only,8299.00,EGP,14,tablets
+XPRS-3005,"Xiaomi Redmi Pad SE 11 8GB RAM, 256GB",11666.00,EGP,9,tablets
+XPRS-3006,"Lenovo Tab P12 (12.7"")",16999.00,EGP,5,tablets
+XPRS-3007,Lenovo Tab One 4G (4GB RAM / 128GB),6160.00,EGP,0,tablets
+XPRS-3008,Honor Pad X9a LTE (8GB Ram / 128GB),13155.00,EGP,10,tablets

@@ -1,0 +1,5 @@
+order_id,status,carrier,tracking,eta_days,items,total
+XPRS-100231,shipped,Bosta,BST-XP-44120,1,"Oppo A6 4G (6GB Ram, 128GB)",13999.00
+XPRS-100232,processing,,,2,Samsung Galaxy S26 Ultra 5G (12GB Ram / 512GB),80499.00
+XPRS-100233,delivered,Mylerz,MYL-XP-77810,0,"Lenovo Tab P12 (12.7"")|Honor X5c Plus 4G (4GB Ram - 128GB)",23887.00
+XPRS-100234,out_for_delivery,Bosta,BST-XP-44950,1,Asus Vivobook 15 (Intel Core i5-1335U),32499.00

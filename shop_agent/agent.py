@@ -12,7 +12,7 @@ Run it:
 from google.adk.agents.llm_agent import Agent
 from google.adk.tools.tool_context import ToolContext
 
-from .data import PRODUCTS, ORDERS, POLICIES, FAQS
+from .data import PRODUCTS, ORDERS, POLICIES, FAQS, BRANCHES
 
 
 # --- Tools -------------------------------------------------------------------
@@ -78,7 +78,8 @@ def get_policy(topic: str) -> dict:
     """Return the store policy for a given topic.
 
     Args:
-        topic: One of "returns", "shipping", "warranty", or "payment".
+        topic: One of "returns", "shipping", "warranty", "payment", or
+            "installments".
 
     Returns:
         The policy text, or the list of valid topics if the topic is unknown.
@@ -204,34 +205,68 @@ def add_to_cart(sku: str, quantity: int, tool_context: ToolContext) -> dict:
     }
 
 
+def find_store(query: str = "") -> dict:
+    """Find XPRS store branches, or the branch nearest to an area the customer mentions.
+
+    Args:
+        query: An area, district, city, or mall name to match against, e.g.
+            "Nasr City", "Zamalek", "Madinaty", or "Mall of Arabia". Leave it
+            empty to list every branch.
+
+    Returns:
+        A dict with a list of matching branches, each including its name, area,
+        city, and hotline.
+    """
+    q = query.lower().strip()
+    matches = []
+    for b in BRANCHES:
+        if not q or q in b["name"].lower() or q in b["area"].lower() or q in b["city"].lower():
+            matches.append(b)
+
+    if not matches:
+        return {"status": "no_results", "query": query, "branches": []}
+    return {"status": "success", "count": len(matches), "branches": matches}
+
+
 # --- Agent -------------------------------------------------------------------
 
 root_agent = Agent(
     model="gemini-3-flash-preview",
-    name="shop_agent",
-    description="Customer support agent for an online retail electronics shop.",
+    name="xprs_support",
+    description="Customer support agent for XPRS, an electronics retailer in Egypt (powered by Tradeline).",
     instruction=(
-        "You are a friendly, concise customer support agent for an online "
-        "electronics retail shop in Egypt. Prices are in EGP.\n\n"
+        "You are a friendly, concise customer support agent for XPRS, a consumer "
+        "electronics retailer in Egypt (powered by Tradeline). XPRS sells phones, "
+        "laptops, tablets, gaming, TVs, audio and accessories — online and across "
+        "9 stores in Greater Cairo, Giza and the North Coast. All prices are in "
+        "Egyptian Pounds (EGP).\n\n"
         "Your job:\n"
         "- Help customers find products, check prices and stock, and compare "
         "options. Use search_products and get_product_details.\n"
         "- Look up order status and tracking with check_order_status when a "
-        "customer gives an order ID (format ORD-#####).\n"
-        "- Answer questions about returns, shipping, warranty, and payment "
-        "using get_policy. Do not invent policy details; if get_policy returns "
-        "an unknown topic, tell the customer the topics you can help with.\n"
+        "customer gives an order ID (they look like 'XPRS-100231').\n"
+        "- Answer questions about returns, shipping, warranty, payment and "
+        "installments using get_policy. Do not invent policy details; if "
+        "get_policy returns an unknown topic, tell the customer the topics you "
+        "can help with.\n"
+        "- Tell customers where XPRS stores are, or find the branch nearest to an "
+        "area they mention, using find_store.\n"
         "- For general 'how does it work' questions about the shop (ordering, "
-        "delivery times, returns, warranty, payment, cancelling, accounts), use "
-        "get_faq_response. Pass the customer's question through roughly as they "
-        "asked it. Only relay the answer when the status is 'success'; on "
-        "'low_confidence' or 'no_match', do NOT relay anything — ask a "
-        "clarifying question or offer to help another way.\n"
+        "delivery times, returns, warranty, payment, installments, cancelling, "
+        "accounts, stores), use get_faq_response. Pass the customer's question "
+        "through roughly as they asked it. Only relay the answer when the status "
+        "is 'success'; on 'low_confidence' or 'no_match', do NOT relay anything — "
+        "ask a clarifying question or offer to help another way.\n"
         "- When a customer wants to buy something, use add_to_cart and then "
         "confirm what is in their cart and the running total.\n\n"
+        "Highlight XPRS perks when they're relevant: 0% interest installments "
+        "(0% fees, 0% down payment), cash on delivery across Egypt, official "
+        "manufacturer warranty, and fast delivery (about 48 hours). For anything "
+        "you can't resolve, point customers to the hotline 19857 or "
+        "sales@myxprs.com.\n\n"
         "Always rely on the tools for facts. If a tool returns 'not_found' or "
         "'no_results', say so plainly and offer to help another way. Never make "
-        "up a price, stock level, tracking number, or policy."
+        "up a price, stock level, tracking number, store address, or policy."
     ),
     tools=[
         search_products,
@@ -240,5 +275,6 @@ root_agent = Agent(
         get_policy,
         get_faq_response,
         add_to_cart,
+        find_store,
     ],
 )
