@@ -1,4 +1,4 @@
-# Retail Support Agent (MVP)
+# A customer-support agent for XPRS Store
 
 A customer-support agent for **XPRS** ([myxprs.com](https://myxprs.com)), a real
 Egyptian consumer-electronics retailer (powered by Tradeline), built with
